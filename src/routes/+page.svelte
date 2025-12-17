@@ -70,6 +70,17 @@
 				</div>
 			</a>
 
+			<a href="/challenge"
+				class="group flex items-center gap-4 rounded-3xl bg-white p-5 shadow-lg
+					   transition-all hover:scale-[1.02] hover:shadow-xl active:scale-95">
+				<div class="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-purple-100 to-pink-100 text-4xl
+							group-hover:from-purple-200 group-hover:to-pink-200 transition-colors">⏱️</div>
+				<div>
+					<span class="text-2xl font-bold text-gray-700">チャレンジ</span>
+					<p class="text-base text-gray-500">タイムアタック！</p>
+				</div>
+			</a>
+
 			<a href="/zukan"
 				class="group flex items-center gap-4 rounded-3xl bg-white p-5 shadow-lg
 					   transition-all hover:scale-[1.02] hover:shadow-xl active:scale-95">
