@@ -20,7 +20,7 @@
 
 	onMount(async () => {
 		const kanjiId = $page.params.id;
-		const res = await fetch('/data/kanji-g1.json');
+		const res = await fetch('/data/kanji-g2.json');
 		const kanjiList: Kanji[] = await res.json();
 		kanji = kanjiList.find((k) => k.id === kanjiId) || null;
 		if (kanji) {

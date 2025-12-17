@@ -27,6 +27,7 @@
 	let container: HTMLDivElement;
 	let writer: HanziWriter | null = null;
 	let quizActive = $state(false);
+	let currentCharacter = '';
 
 	onMount(() => {
 		createWriter();
@@ -61,13 +62,15 @@
 			drawingWidth: 8,
 			showHintAfterMisses: 2,
 			highlightOnComplete: true,
-			charDataLoader: (char: string) => {
-				return HanziWriter.loadCharacterData(char);
+			charDataLoader: async (char: string) => {
+				const encoded = encodeURIComponent(char); const url = 'https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encoded + '.json'; const res = await fetch(url); return res.json();
 			}
 		});
 	}
 
 	$effect(() => {
+		if (character === currentCharacter) return;
+		currentCharacter = character;
 		if (container && character) {
 			createWriter();
 			quizActive = false;

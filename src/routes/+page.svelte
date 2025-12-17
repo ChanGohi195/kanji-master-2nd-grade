@@ -57,38 +57,28 @@
 			</div>
 		</section>
 
-		<!-- メインメニュー 2x2 -->
-		<section class="mb-6 grid grid-cols-2 gap-4">
-			<a href="/kakitori"
-				class="group flex flex-col items-center gap-2 rounded-3xl bg-white p-5 shadow-lg
-					   transition-all hover:scale-105 hover:shadow-xl active:scale-95">
-				<div class="flex h-16 w-16 items-center justify-center rounded-full bg-cyan-100 text-4xl
-							group-hover:bg-cyan-200 transition-colors">✏️</div>
-				<span class="text-xl font-bold text-gray-700">{UI.kakitori}</span>
-			</a>
-
-			<a href="/yomitori"
-				class="group flex flex-col items-center gap-2 rounded-3xl bg-white p-5 shadow-lg
-					   transition-all hover:scale-105 hover:shadow-xl active:scale-95">
-				<div class="flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-4xl
-							group-hover:bg-green-200 transition-colors">📖</div>
-				<span class="text-xl font-bold text-gray-700">{UI.yomitori}</span>
+		<!-- メインメニュー -->
+		<section class="mb-6 flex flex-col gap-4">
+			<a href="/bunsho"
+				class="group flex items-center gap-4 rounded-3xl bg-white p-5 shadow-lg
+					   transition-all hover:scale-[1.02] hover:shadow-xl active:scale-95">
+				<div class="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 text-4xl
+							group-hover:from-blue-200 group-hover:to-indigo-200 transition-colors">📝</div>
+				<div>
+					<span class="text-2xl font-bold text-gray-700">れんしゅう</span>
+					<p class="text-base text-gray-500">ぶんしょうで よみかき</p>
+				</div>
 			</a>
 
 			<a href="/zukan"
-				class="group flex flex-col items-center gap-2 rounded-3xl bg-white p-5 shadow-lg
-					   transition-all hover:scale-105 hover:shadow-xl active:scale-95">
-				<div class="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-4xl
-							group-hover:bg-blue-200 transition-colors">📚</div>
-				<span class="text-xl font-bold text-gray-700">{UI.zukan}</span>
-			</a>
-
-			<a href="/bunsho"
-				class="group flex flex-col items-center gap-2 rounded-3xl bg-white p-5 shadow-lg
-					   transition-all hover:scale-105 hover:shadow-xl active:scale-95">
-				<div class="flex h-16 w-16 items-center justify-center rounded-full bg-purple-100 text-4xl
-							group-hover:bg-purple-200 transition-colors">📝</div>
-				<span class="text-xl font-bold text-gray-700">ぶんしょう</span>
+				class="group flex items-center gap-4 rounded-3xl bg-white p-5 shadow-lg
+					   transition-all hover:scale-[1.02] hover:shadow-xl active:scale-95">
+				<div class="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-purple-100 to-indigo-100 text-4xl
+							group-hover:from-purple-200 group-hover:to-indigo-200 transition-colors">📚</div>
+				<div>
+					<span class="text-2xl font-bold text-gray-700">{UI.zukan}</span>
+					<p class="text-base text-gray-500">あつめた かんじ</p>
+				</div>
 			</a>
 		</section>
 
