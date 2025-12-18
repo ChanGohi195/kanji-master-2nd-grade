@@ -113,7 +113,7 @@
 		if (!ctx || points.length < 2) return;
 
 		const outlinePoints = getStroke(points, {
-			size: strokeWidth * 4,
+			size: strokeWidth * 3,
 			thinning: 0.5,
 			smoothing: 0.5,
 			streamline: 0.5,
@@ -181,7 +181,7 @@
 		for (const points of allStrokes) {
 			if (points.length < 2) continue;
 			const outlinePoints = getStroke(points, {
-				size: strokeWidth * 4,
+				size: strokeWidth * 3,
 				thinning: 0.5,
 				smoothing: 0.5,
 				streamline: 0.5,
