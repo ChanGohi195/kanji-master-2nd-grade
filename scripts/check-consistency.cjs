@@ -22,7 +22,18 @@ data.forEach((kanji) => {
       });
     }
 
-    // 2. reading と sentenceHiragana の整合性チェック
+    // 2. 対象漢字が sentence に含まれているか（文章読み問題で必須）
+    if (!ex.sentence.includes(kanji.character)) {
+      issues.push({
+        kanji: kanji.character,
+        type: '対象漢字なし',
+        id: ex.id,
+        sentence: ex.sentence,
+        ruby: ex.sentenceWithRuby
+      });
+    }
+
+    // 3. reading と sentenceHiragana の整合性チェック
     const hiragana = ex.sentenceHiragana || '';
     const reading = ex.reading;
 

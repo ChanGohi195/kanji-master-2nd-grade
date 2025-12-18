@@ -158,12 +158,11 @@ async function updateProgress(
 }
 
 function calculateModeMastery(attempts: number, correct: number): 0 | 1 | 2 | 3 {
-	if (attempts === 0) return 0;
-	const rate = correct / attempts;
-
-	if (attempts >= 10 && rate >= 0.9) return 3;
-	if (attempts >= 5 && rate >= 0.8) return 2;
-	if (attempts >= 1) return 1;
+	// 試行回数ベースで習熟度を計算（正解率条件なし）
+	// 練習した分だけ成長する設計
+	if (attempts >= 10) return 3;  // 10回練習で花丸
+	if (attempts >= 3) return 2;   // 3回練習でレベル2
+	if (attempts >= 1) return 1;   // 1回練習でレベル1
 	return 0;
 }
 
