@@ -50,10 +50,10 @@
 				></div>
 			</div>
 			<div class="mt-3 flex justify-around text-center">
-				<div><div class="text-2xl">🌸</div><div class="text-base font-bold text-pink-500">{growthCounts[4] + growthCounts[5]}</div></div>
-				<div><div class="text-2xl">🌳</div><div class="text-base font-bold text-green-600">{growthCounts[3]}</div></div>
-				<div><div class="text-2xl">🌿</div><div class="text-base font-bold text-green-500">{growthCounts[2]}</div></div>
 				<div><div class="text-2xl">🌱</div><div class="text-base font-bold text-green-400">{growthCounts[1]}</div></div>
+				<div><div class="text-2xl">🌿</div><div class="text-base font-bold text-green-500">{growthCounts[2]}</div></div>
+				<div><div class="text-2xl">🌳</div><div class="text-base font-bold text-green-600">{growthCounts[3]}</div></div>
+				<div><div class="text-2xl">🌸</div><div class="text-base font-bold text-pink-500">{growthCounts[4] + growthCounts[5]}</div></div>
 			</div>
 		</section>
 
