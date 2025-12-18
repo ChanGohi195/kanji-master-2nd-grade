@@ -4,7 +4,7 @@
 	import { page } from '$app/stores';
 	import { UI } from '$lib/data/ui-text';
 	import { recordStudy, recordBunshoStudy, getProgress } from '$lib/db';
-	import { playCorrectSound, playCloseSound } from '$lib/services/sound';
+	import { playCorrectSound, playCloseSound, playIncorrectSound } from '$lib/services/sound';
 	import VerticalSentence from '$lib/components/VerticalSentence.svelte';
 	import SpeakButton from '$lib/components/SpeakButton.svelte';
 	import WritingCanvas from '$lib/components/WritingCanvas.svelte';
@@ -291,7 +291,7 @@
 				setTimeout(handleNext, 700);
 			}
 		} else {
-			playCloseSound();
+			playIncorrectSound();
 		}
 	}
 

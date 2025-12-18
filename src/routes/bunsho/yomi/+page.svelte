@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 	import { UI } from '$lib/data/ui-text';
 	import { recordStudy, recordBunshoStudy } from '$lib/db';
-	import { playCorrectSound } from '$lib/services/sound';
+	import { playCorrectSound, playIncorrectSound } from '$lib/services/sound';
 	import VerticalSentence from '$lib/components/VerticalSentence.svelte';
 	import SpeakButton from '$lib/components/SpeakButton.svelte';
 
@@ -130,6 +130,8 @@
 			} else if (!targetKanjiChar) {
 				setTimeout(handleNext, 700);
 			}
+		} else {
+			playIncorrectSound();
 		}
 	}
 

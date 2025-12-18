@@ -2,7 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { browser } from '$app/environment';
 	import { UI } from '$lib/data/ui-text';
-	import { playCorrectSound, playCloseSound } from '$lib/services/sound';
+	import { playCorrectSound, playCloseSound, playIncorrectSound } from '$lib/services/sound';
 	import { recordStudy, recordBunshoStudy } from '$lib/db';
 	import VerticalSentence from '$lib/components/VerticalSentence.svelte';
 	import SpeakButton from '$lib/components/SpeakButton.svelte';
@@ -167,6 +167,7 @@
 			playCorrectSound();
 		} else {
 			results.mistakes.push({ kanji: currentQuestion.kanji.character, type: 'yomi' });
+			playIncorrectSound();
 		}
 
 		// 進捗を記録
@@ -220,7 +221,7 @@
 			playCorrectSound();
 		} else {
 			results.mistakes.push({ kanji: currentQuestion.kanji.character, type: 'kaki' });
-			playCloseSound();
+			playIncorrectSound();
 		}
 
 		// 進捗を記録
@@ -263,6 +264,7 @@
 			}
 		} else {
 			results.mistakes.push({ kanji: currentQuestion.kanji.character, type: 'kaki' });
+			playIncorrectSound();
 		}
 
 		// 進捗を記録
