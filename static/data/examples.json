@@ -5620,43 +5620,46 @@
     "examples": [
       {
         "id": "U+982D-ex-1",
-        "sentence": "頭が いたい。",
+        "sentence": "頭が 痛い。",
         "reading": "あたま",
         "type": "kun",
-        "sentenceWithRuby": "頭が いたい。",
+        "sentenceWithRuby": "頭が 痛い。",
         "sentenceHiragana": "あたまが いたい。"
       },
       {
         "id": "U+982D-ex-2",
-        "sentence": "頭を つかう。",
-        "reading": "あたま",
-        "type": "kun",
-        "sentenceWithRuby": "頭を つかう。",
-        "sentenceHiragana": "あたまを つかう。"
+        "sentence": "先頭に 立つ。",
+        "reading": "せんとう",
+        "type": "on",
+        "targetWord": "先頭",
+        "sentenceWithRuby": "先頭に 立つ。",
+        "sentenceHiragana": "せんとうに たつ。"
       },
       {
         "id": "U+982D-ex-3",
-        "sentence": "頭が いい。",
+        "sentence": "頭を 使う。",
         "reading": "あたま",
         "type": "kun",
-        "sentenceWithRuby": "頭が いい。",
-        "sentenceHiragana": "あたまが いい。"
+        "sentenceWithRuby": "頭を 使う。",
+        "sentenceHiragana": "あたまを つかう。"
       },
       {
         "id": "U+982D-ex-4",
-        "sentence": "一頭の うま。",
-        "reading": "とう",
+        "sentence": "一頭の 馬。",
+        "reading": "いっとう",
         "type": "on",
-        "sentenceWithRuby": "一[いち]頭の うま。",
-        "sentenceHiragana": "いちとうの うま。"
+        "targetWord": "一頭",
+        "sentenceWithRuby": "一頭の 馬。",
+        "sentenceHiragana": "いっとうの うま。"
       },
       {
         "id": "U+982D-ex-5",
-        "sentence": "頭を あらう。",
-        "reading": "あたま",
-        "type": "kun",
-        "sentenceWithRuby": "頭を あらう。",
-        "sentenceHiragana": "あたまを あらう。"
+        "sentence": "頭上に ある。",
+        "reading": "ずじょう",
+        "type": "on",
+        "targetWord": "頭上",
+        "sentenceWithRuby": "頭上に ある。",
+        "sentenceHiragana": "ずじょうに ある。"
       }
     ]
   },
