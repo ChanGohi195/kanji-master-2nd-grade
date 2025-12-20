@@ -6055,11 +6055,12 @@
       },
       {
         "id": "U+8CB7-ex-4",
-        "sentence": "花を 買う。",
-        "reading": "か.う",
-        "type": "kun",
-        "sentenceWithRuby": "花を 買う。",
-        "sentenceHiragana": "はなを かう。"
+        "sentence": "売買を する。",
+        "reading": "ばいばい",
+        "type": "on",
+        "targetWord": "売買",
+        "sentenceWithRuby": "売買を する。",
+        "sentenceHiragana": "ばいばいを する。"
       },
       {
         "id": "U+8CB7-ex-5",
