@@ -6316,18 +6316,18 @@
       {
         "id": "U+5206-ex-2",
         "sentence": "ケーキを 分ける。",
-        "reading": "わける",
+        "reading": "わ.ける",
         "type": "kun",
         "sentenceWithRuby": "ケーキを 分ける。",
         "sentenceHiragana": "けーきを わける。"
       },
       {
         "id": "U+5206-ex-3",
-        "sentence": "ふたつに 分ける。",
-        "reading": "わける",
+        "sentence": "二つに 分ける。",
+        "reading": "わ.ける",
         "type": "kun",
-        "sentenceWithRuby": "ふたつに 分ける。",
-        "sentenceHiragana": "ふたつに わけるける。"
+        "sentenceWithRuby": "二つに 分ける。",
+        "sentenceHiragana": "ふたつに わける。"
       },
       {
         "id": "U+5206-ex-4",
@@ -6340,7 +6340,7 @@
       {
         "id": "U+5206-ex-5",
         "sentence": "分かれる。",
-        "reading": "わ",
+        "reading": "わ.かれる",
         "type": "kun",
         "sentenceWithRuby": "分かれる。",
         "sentenceHiragana": "わかれる。"
