@@ -6516,10 +6516,11 @@
       {
         "id": "U+6BCD-ex-4",
         "sentence": "母音を まなぶ。",
-        "reading": "ぼ",
+        "reading": "ぼいん",
         "type": "on",
+        "targetWord": "母音",
         "sentenceWithRuby": "母音を まなぶ。",
-        "sentenceHiragana": "ぼおんを まなぶ。"
+        "sentenceHiragana": "ぼいんを まなぶ。"
       },
       {
         "id": "U+6BCD-ex-5",
