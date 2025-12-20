@@ -5666,40 +5666,42 @@
     "examples": [
       {
         "id": "U+540C-ex-1",
-        "sentence": "同じ いろ。",
-        "reading": "おなじ",
+        "sentence": "同じ 色。",
+        "reading": "おな.じ",
         "type": "kun",
-        "sentenceWithRuby": "同じ いろ。",
+        "sentenceWithRuby": "同じ 色。",
         "sentenceHiragana": "おなじ いろ。"
       },
       {
         "id": "U+540C-ex-2",
-        "sentence": "同きゅうせいだね。",
-        "reading": "どう",
+        "sentence": "同級生だね。",
+        "reading": "どうきゅうせい",
         "type": "on",
-        "sentenceWithRuby": "同きゅうせいだね。",
+        "targetWord": "同級生",
+        "sentenceWithRuby": "同級生だね。",
         "sentenceHiragana": "どうきゅうせいだね。"
       },
       {
         "id": "U+540C-ex-3",
-        "sentence": "同じ いろ。",
-        "reading": "おなじ",
+        "sentence": "同じ 大きさ。",
+        "reading": "おな.じ",
         "type": "kun",
-        "sentenceWithRuby": "同じ いろ。",
-        "sentenceHiragana": "おなじじ いろ。"
+        "sentenceWithRuby": "同じ 大きさ。",
+        "sentenceHiragana": "おなじ おおきさ。"
       },
       {
         "id": "U+540C-ex-4",
-        "sentence": "同じょうする。",
-        "reading": "どう",
+        "sentence": "同情する。",
+        "reading": "どうじょう",
         "type": "on",
-        "sentenceWithRuby": "同じょうする。",
+        "targetWord": "同情",
+        "sentenceWithRuby": "同情する。",
         "sentenceHiragana": "どうじょうする。"
       },
       {
         "id": "U+540C-ex-5",
         "sentence": "同じく する。",
-        "reading": "おな",
+        "reading": "おな.じ",
         "type": "kun",
         "sentenceWithRuby": "同じく する。",
         "sentenceHiragana": "おなじく する。"
