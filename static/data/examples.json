@@ -5489,7 +5489,7 @@
       {
         "id": "U+5F53-ex-2",
         "sentence": "本当だよ。",
-        "reading": "とう",
+        "reading": "ほんとう",
         "type": "on",
         "targetWord": "本当",
         "sentenceWithRuby": "本当だよ。",
@@ -5498,7 +5498,7 @@
       {
         "id": "U+5F53-ex-3",
         "sentence": "当日に 行く。",
-        "reading": "とう",
+        "reading": "とうじつ",
         "type": "on",
         "targetWord": "当日",
         "sentenceWithRuby": "当日に 行く。",
@@ -5507,7 +5507,7 @@
       {
         "id": "U+5F53-ex-4",
         "sentence": "当ばんする。",
-        "reading": "とう",
+        "reading": "とうばん",
         "type": "on",
         "targetWord": "当番",
         "sentenceWithRuby": "当ばんする。",
