@@ -6515,11 +6515,12 @@
       },
       {
         "id": "U+6BCD-ex-4",
-        "sentence": "母音を まなぶ。",
-        "reading": "ぼ",
+        "sentence": "母音を 学ぶ。",
+        "reading": "ぼいん",
         "type": "on",
-        "sentenceWithRuby": "母音を まなぶ。",
-        "sentenceHiragana": "ぼおんを まなぶ。"
+        "targetWord": "母音",
+        "sentenceWithRuby": "母音を 学ぶ。",
+        "sentenceHiragana": "ぼいんを まなぶ。"
       },
       {
         "id": "U+6BCD-ex-5",
