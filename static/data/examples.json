@@ -5802,43 +5802,43 @@
     "examples": [
       {
         "id": "U+5185-ex-1",
-        "sentence": "家の 内。",
+        "sentence": "家の 内に いる。",
         "reading": "うち",
         "type": "kun",
-        "sentenceWithRuby": "家の 内。",
-        "sentenceHiragana": "いえの うち。"
-      },
-      {
-        "id": "U+5185-ex-2",
-        "sentence": "あん内する。",
-        "reading": "ない",
-        "type": "on",
-        "sentenceWithRuby": "あん内する。",
-        "sentenceHiragana": "あんないする。"
-      },
-      {
-        "id": "U+5185-ex-3",
-        "sentence": "いえの 内に いる。",
-        "reading": "うち",
-        "type": "kun",
-        "sentenceWithRuby": "いえの 内に いる。",
+        "sentenceWithRuby": "家の 内に いる。",
         "sentenceHiragana": "いえの うちに いる。"
       },
       {
-        "id": "U+5185-ex-4",
-        "sentence": "あん内する。",
+        "id": "U+5185-ex-2",
+        "sentence": "えきを あん内する。",
         "reading": "ない",
         "type": "on",
-        "sentenceWithRuby": "あん内する。",
-        "sentenceHiragana": "あんないする。"
+        "sentenceWithRuby": "えきを あん内する。",
+        "sentenceHiragana": "えきを あんないする。"
+      },
+      {
+        "id": "U+5185-ex-3",
+        "sentence": "しつ内で あそぶ。",
+        "reading": "ない",
+        "type": "on",
+        "sentenceWithRuby": "しつ内で あそぶ。",
+        "sentenceHiragana": "しつないで あそぶ。"
+      },
+      {
+        "id": "U+5185-ex-4",
+        "sentence": "内がわに まわる。",
+        "reading": "うち",
+        "type": "kun",
+        "sentenceWithRuby": "内がわに まわる。",
+        "sentenceHiragana": "うちがわに まわる。"
       },
       {
         "id": "U+5185-ex-5",
-        "sentence": "内がわ。",
-        "reading": "うち",
-        "type": "kun",
-        "sentenceWithRuby": "内がわ。",
-        "sentenceHiragana": "うちがわ。"
+        "sentence": "一年い内に やる。",
+        "reading": "ない",
+        "type": "on",
+        "sentenceWithRuby": "一年い内に やる。",
+        "sentenceHiragana": "いちねんいないに やる。"
       }
     ]
   },
