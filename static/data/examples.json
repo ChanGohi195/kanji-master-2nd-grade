@@ -6399,43 +6399,46 @@
     "examples": [
       {
         "id": "U+7C73-ex-1",
-        "sentence": "米を たく。",
+        "sentence": "お米を 洗う。",
         "reading": "こめ",
         "type": "kun",
-        "sentenceWithRuby": "米を たく。",
-        "sentenceHiragana": "こめを たく。"
+        "sentenceWithRuby": "お米を 洗う。",
+        "sentenceHiragana": "おこめを あらう。"
       },
       {
         "id": "U+7C73-ex-2",
-        "sentence": "白い 米。",
-        "reading": "こめ",
-        "type": "kun",
-        "sentenceWithRuby": "白い 米。",
-        "sentenceHiragana": "しろい こめ。"
+        "sentence": "白米が 美味しい。",
+        "reading": "はくまい",
+        "type": "on",
+        "targetWord": "白米",
+        "sentenceWithRuby": "白米が 美味しい。",
+        "sentenceHiragana": "はくまいが おいしい。"
       },
       {
         "id": "U+7C73-ex-3",
-        "sentence": "米を とぐ。",
-        "reading": "こめ",
-        "type": "kun",
-        "sentenceWithRuby": "米を とぐ。",
-        "sentenceHiragana": "こめを とぐ。"
+        "sentence": "新米の 季節だ。",
+        "reading": "しんまい",
+        "type": "on",
+        "targetWord": "新米",
+        "sentenceWithRuby": "新米の 季節だ。",
+        "sentenceHiragana": "しんまいの きせつだ。"
       },
       {
         "id": "U+7C73-ex-4",
-        "sentence": "米こくを たべる。",
-        "reading": "べい",
+        "sentence": "米国に 行く。",
+        "reading": "べいこく",
         "type": "on",
-        "sentenceWithRuby": "米こくを たべる。",
-        "sentenceHiragana": "べいこくを たべる。"
+        "targetWord": "米国",
+        "sentenceWithRuby": "米国に 行く。",
+        "sentenceHiragana": "べいこくに いく。"
       },
       {
         "id": "U+7C73-ex-5",
-        "sentence": "あたらしい 米。",
+        "sentence": "米を 炊く。",
         "reading": "こめ",
         "type": "kun",
-        "sentenceWithRuby": "あたらしい 米。",
-        "sentenceHiragana": "あたらしい こめ。"
+        "sentenceWithRuby": "米を 炊く。",
+        "sentenceHiragana": "こめを たく。"
       }
     ]
   },
