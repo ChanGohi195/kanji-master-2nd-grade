@@ -2,13 +2,14 @@
 	interface Props {
 		sentence: string;
 		targetKanji: string;
+		targetWord?: string; // 熟語全体をハイライトする場合
 		targetReading?: string;
 		showBlank?: boolean;
 		showRuby?: boolean;
 		hideReadingHint?: boolean; // ブランク上の読みを非表示（読みクイズ用）
 	}
 
-	let { sentence, targetKanji, targetReading = '', showBlank = false, showRuby = false, hideReadingHint = false }: Props = $props();
+	let { sentence, targetKanji, targetWord = '', targetReading = '', showBlank = false, showRuby = false, hideReadingHint = false }: Props = $props();
 
 	interface CharInfo {
 		char: string;
@@ -25,11 +26,26 @@
 		return '';
 	}
 
+	// targetWordの位置を特定
+	function getTargetWordIndices(text: string, word: string): Set<number> {
+		const indices = new Set<number>();
+		if (!word) return indices;
+		const startIndex = text.indexOf(word);
+		if (startIndex !== -1) {
+			for (let i = 0; i < word.length; i++) {
+				indices.add(startIndex + i);
+			}
+		}
+		return indices;
+	}
+
 	// ルビ記法をパース: "一[ひと]つ" → [{char: "一", ruby: "ひと"}, {char: "つ"}]
 	function parseWithRuby(text: string): CharInfo[] {
 		const result: CharInfo[] = [];
 		const okurigana = getOkurigana(targetReading);
+		const targetIndices = getTargetWordIndices(text.replace(/\[[^\]]*\]/g, ''), targetWord);
 		let i = 0;
+		let charIndex = 0;
 		let foundTarget = false;
 		let okuriganaIndex = 0;
 
@@ -41,31 +57,32 @@
 				const endBracket = text.indexOf(']', i);
 				if (endBracket !== -1) {
 					const ruby = text.slice(i + 1, endBracket);
-					const isTarget = char === targetKanji;
+					const isTarget = targetWord ? targetIndices.has(charIndex) : char === targetKanji;
 					if (isTarget) foundTarget = true;
 					result.push({ char, ruby, isTarget });
 					i = endBracket + 1;
+					charIndex++;
 					continue;
 				}
 			}
 
-			const isTarget = char === targetKanji;
+			const isTarget = targetWord ? targetIndices.has(charIndex) : char === targetKanji;
 			if (isTarget) foundTarget = true;
 
-			// 対象漢字の直後で送り仮名と一致するかチェック
+			// 対象漢字の直後で送り仮名と一致するかチェック（targetWordがない場合のみ）
 			let isOkurigana = false;
-			if (foundTarget && okurigana && okuriganaIndex < okurigana.length) {
+			if (!targetWord && foundTarget && okurigana && okuriganaIndex < okurigana.length) {
 				if (char === okurigana[okuriganaIndex]) {
 					isOkurigana = true;
 					okuriganaIndex++;
 				} else {
-					// 送り仮名が途切れたらリセット
 					foundTarget = false;
 					okuriganaIndex = 0;
 				}
 			}
 
 			result.push({ char, ruby: undefined, isTarget, isOkurigana });
+			charIndex++;
 		}
 		return result;
 	}
@@ -76,16 +93,19 @@
 			return parseWithRuby(sentence);
 		}
 		const okurigana = getOkurigana(targetReading);
+		const targetIndices = getTargetWordIndices(sentence, targetWord);
 		const result: CharInfo[] = [];
 		let foundTarget = false;
 		let okuriganaIndex = 0;
 
+		let charIndex = 0;
 		for (const char of sentence) {
-			const isTarget = char === targetKanji;
+			const isTarget = targetWord ? targetIndices.has(charIndex) : char === targetKanji;
 			if (isTarget) foundTarget = true;
 
+			// 対象漢字の直後で送り仮名と一致するかチェック（targetWordがない場合のみ）
 			let isOkurigana = false;
-			if (foundTarget && okurigana && okuriganaIndex < okurigana.length) {
+			if (!targetWord && foundTarget && okurigana && okuriganaIndex < okurigana.length) {
 				if (char === okurigana[okuriganaIndex]) {
 					isOkurigana = true;
 					okuriganaIndex++;
@@ -96,6 +116,7 @@
 			}
 
 			result.push({ char, ruby: undefined, isTarget, isOkurigana });
+			charIndex++;
 		}
 		return result;
 	});
