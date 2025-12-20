@@ -6814,7 +6814,7 @@
       {
         "id": "U+9E23-ex-1",
         "sentence": "とりが 鳴く。",
-        "reading": "なく",
+        "reading": "な.く",
         "type": "kun",
         "sentenceWithRuby": "とりが 鳴く。",
         "sentenceHiragana": "とりが なく。"
@@ -6822,34 +6822,34 @@
       {
         "id": "U+9E23-ex-2",
         "sentence": "かねが 鳴る。",
-        "reading": "なる",
+        "reading": "な.る",
         "type": "kun",
         "sentenceWithRuby": "かねが 鳴る。",
         "sentenceHiragana": "かねが なる。"
       },
       {
         "id": "U+9E23-ex-3",
-        "sentence": "すずが 鳴る。",
-        "reading": "なる",
+        "sentence": "すずを 鳴らす。",
+        "reading": "な.らす",
         "type": "kun",
-        "sentenceWithRuby": "すずが 鳴る。",
-        "sentenceHiragana": "すずが なる。"
+        "sentenceWithRuby": "すずを 鳴らす。",
+        "sentenceHiragana": "すずを ならす。"
       },
       {
         "id": "U+9E23-ex-4",
         "sentence": "いぬが 鳴く。",
-        "reading": "なく",
+        "reading": "な.く",
         "type": "kun",
         "sentenceWithRuby": "いぬが 鳴く。",
         "sentenceHiragana": "いぬが なく。"
       },
       {
         "id": "U+9E23-ex-5",
-        "sentence": "かねが 鳴る。",
-        "reading": "なる",
+        "sentence": "ベルが 鳴る。",
+        "reading": "な.る",
         "type": "kun",
-        "sentenceWithRuby": "かねが 鳴る。",
-        "sentenceHiragana": "かねが なる。"
+        "sentenceWithRuby": "ベルが 鳴る。",
+        "sentenceHiragana": "べるが なる。"
       }
     ]
   },
