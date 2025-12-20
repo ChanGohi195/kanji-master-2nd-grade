@@ -6583,43 +6583,46 @@
     "examples": [
       {
         "id": "U+5317-ex-1",
-        "sentence": "北に いく。",
-        "reading": "きた",
+        "sentence": "北風が つめたい。",
+        "reading": "きたかぜ",
         "type": "kun",
-        "sentenceWithRuby": "北に いく。",
-        "sentenceHiragana": "きたに いく。"
+        "targetWord": "北風",
+        "sentenceWithRuby": "北風が つめたい。",
+        "sentenceHiragana": "きたかぜが つめたい。"
       },
       {
         "id": "U+5317-ex-2",
-        "sentence": "北がわの へや。",
-        "reading": "きた",
+        "sentence": "えきの 北口で まつ。",
+        "reading": "きたぐち",
         "type": "kun",
-        "sentenceWithRuby": "北がわの へや。",
-        "sentenceHiragana": "きたがわの へや。"
+        "targetWord": "北口",
+        "sentenceWithRuby": "えきの 北口で まつ。",
+        "sentenceHiragana": "えきの きたぐちで まつ。"
       },
       {
         "id": "U+5317-ex-3",
-        "sentence": "北の ほう。",
-        "reading": "きた",
-        "type": "kun",
-        "sentenceWithRuby": "北の ほう。",
-        "sentenceHiragana": "きたの ほう。"
+        "sentence": "東北に りょこうする。",
+        "reading": "とうほく",
+        "type": "on",
+        "targetWord": "東北",
+        "sentenceWithRuby": "東北に りょこうする。",
+        "sentenceHiragana": "とうほくに りょこうする。"
       },
       {
         "id": "U+5317-ex-4",
-        "sentence": "北ぶに いく。",
-        "reading": "ほく",
-        "type": "on",
-        "sentenceWithRuby": "北ぶに いく。",
-        "sentenceHiragana": "ほくぶに いく。"
+        "sentence": "北がわの まどを あける。",
+        "reading": "きた",
+        "type": "kun",
+        "sentenceWithRuby": "北がわの まどを あける。",
+        "sentenceHiragana": "きたがわの まどを あける。"
       },
       {
         "id": "U+5317-ex-5",
-        "sentence": "北から ふく。",
+        "sentence": "北を 目ざして あるく。",
         "reading": "きた",
         "type": "kun",
-        "sentenceWithRuby": "北から ふく。",
-        "sentenceHiragana": "きたから ふく。"
+        "sentenceWithRuby": "北を 目ざして あるく。",
+        "sentenceHiragana": "きたを めざして あるく。"
       }
     ]
   },
