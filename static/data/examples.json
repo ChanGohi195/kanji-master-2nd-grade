@@ -6032,41 +6032,41 @@
       {
         "id": "U+8CB7-ex-1",
         "sentence": "本を 買う。",
-        "reading": "かう",
+        "reading": "か.う",
         "type": "kun",
         "sentenceWithRuby": "本を 買う。",
         "sentenceHiragana": "ほんを かう。"
       },
       {
         "id": "U+8CB7-ex-2",
-        "sentence": "買いものを する。",
-        "reading": "かい",
+        "sentence": "買い物を する。",
+        "reading": "か.う",
         "type": "kun",
-        "sentenceWithRuby": "買いものを する。",
+        "sentenceWithRuby": "買い物を する。",
         "sentenceHiragana": "かいものを する。"
       },
       {
         "id": "U+8CB7-ex-3",
-        "sentence": "ほんを 買う。",
-        "reading": "かう",
+        "sentence": "お菓子を 買う。",
+        "reading": "か.う",
         "type": "kun",
-        "sentenceWithRuby": "ほんを 買う。",
-        "sentenceHiragana": "ほんを かうう。"
+        "sentenceWithRuby": "お菓子を 買う。",
+        "sentenceHiragana": "おかしを かう。"
       },
       {
         "id": "U+8CB7-ex-4",
-        "sentence": "買物に いく。",
-        "reading": "ばい",
-        "type": "on",
-        "sentenceWithRuby": "買物に いく。",
-        "sentenceHiragana": "ばい物に いく。"
+        "sentence": "花を 買う。",
+        "reading": "か.う",
+        "type": "kun",
+        "sentenceWithRuby": "花を 買う。",
+        "sentenceHiragana": "はなを かう。"
       },
       {
         "id": "U+8CB7-ex-5",
-        "sentence": "買って かえる。",
-        "reading": "か",
+        "sentence": "買って 帰る。",
+        "reading": "か.う",
         "type": "kun",
-        "sentenceWithRuby": "買って かえる。",
+        "sentenceWithRuby": "買って 帰る。",
         "sentenceHiragana": "かって かえる。"
       }
     ]
