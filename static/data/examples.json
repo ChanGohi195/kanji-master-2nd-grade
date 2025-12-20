@@ -5804,43 +5804,47 @@
     "examples": [
       {
         "id": "U+5185-ex-1",
-        "sentence": "家の 内。",
+        "sentence": "家の 内に いる。",
         "reading": "うち",
         "type": "kun",
-        "sentenceWithRuby": "家の 内。",
-        "sentenceHiragana": "いえの うち。"
-      },
-      {
-        "id": "U+5185-ex-2",
-        "sentence": "あん内する。",
-        "reading": "ない",
-        "type": "on",
-        "sentenceWithRuby": "あん内する。",
-        "sentenceHiragana": "あんないする。"
-      },
-      {
-        "id": "U+5185-ex-3",
-        "sentence": "いえの 内に いる。",
-        "reading": "うち",
-        "type": "kun",
-        "sentenceWithRuby": "いえの 内に いる。",
+        "sentenceWithRuby": "家の 内に いる。",
         "sentenceHiragana": "いえの うちに いる。"
       },
       {
-        "id": "U+5185-ex-4",
-        "sentence": "あん内する。",
-        "reading": "ない",
+        "id": "U+5185-ex-2",
+        "sentence": "駅を 案内する。",
+        "reading": "あんない",
         "type": "on",
-        "sentenceWithRuby": "あん内する。",
-        "sentenceHiragana": "あんないする。"
+        "targetWord": "案内",
+        "sentenceWithRuby": "駅を 案内する。",
+        "sentenceHiragana": "えきを あんないする。"
+      },
+      {
+        "id": "U+5185-ex-3",
+        "sentence": "室内で 遊ぶ。",
+        "reading": "しつない",
+        "type": "on",
+        "targetWord": "室内",
+        "sentenceWithRuby": "室内で 遊ぶ。",
+        "sentenceHiragana": "しつないで あそぶ。"
+      },
+      {
+        "id": "U+5185-ex-4",
+        "sentence": "内側に 回る。",
+        "reading": "うちがわ",
+        "type": "kun",
+        "targetWord": "内側",
+        "sentenceWithRuby": "内側に 回る。",
+        "sentenceHiragana": "うちがわに まわる。"
       },
       {
         "id": "U+5185-ex-5",
-        "sentence": "内がわ。",
-        "reading": "うち",
-        "type": "kun",
-        "sentenceWithRuby": "内がわ。",
-        "sentenceHiragana": "うちがわ。"
+        "sentence": "一年以内に やる。",
+        "reading": "いない",
+        "type": "on",
+        "targetWord": "以内",
+        "sentenceWithRuby": "一年以内に やる。",
+        "sentenceHiragana": "いちねんいないに やる。"
       }
     ]
   },
