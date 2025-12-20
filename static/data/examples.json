@@ -6537,43 +6537,47 @@
     "examples": [
       {
         "id": "U+65B9-ex-1",
-        "sentence": "あの 方を みる。",
-        "reading": "かた",
+        "sentence": "夕方に なった。",
+        "reading": "ゆうがた",
         "type": "kun",
-        "sentenceWithRuby": "あの 方を みる。",
-        "sentenceHiragana": "あの かたを みる。"
+        "targetWord": "夕方",
+        "sentenceWithRuby": "夕方に なった。",
+        "sentenceHiragana": "ゆうがたに なった。"
       },
       {
         "id": "U+65B9-ex-2",
-        "sentence": "やり方を おしえる。",
-        "reading": "かた",
+        "sentence": "読み方を 教える。",
+        "reading": "よみかた",
         "type": "kun",
-        "sentenceWithRuby": "やり方を おしえる。",
-        "sentenceHiragana": "やりかたを おしえる。"
+        "targetWord": "読み方",
+        "sentenceWithRuby": "読み方を 教える。",
+        "sentenceHiragana": "よみかたを おしえる。"
       },
       {
         "id": "U+65B9-ex-3",
-        "sentence": "あの 方は だれ？",
-        "reading": "かた",
-        "type": "kun",
-        "sentenceWithRuby": "あの 方は だれ？",
-        "sentenceHiragana": "あの かたは だれ？"
+        "sentence": "地方に 住む。",
+        "reading": "ちほう",
+        "type": "on",
+        "targetWord": "地方",
+        "sentenceWithRuby": "地方に 住む。",
+        "sentenceHiragana": "ちほうに すむ。"
       },
       {
         "id": "U+65B9-ex-4",
-        "sentence": "そちらの 方。",
-        "reading": "ほう",
+        "sentence": "方向を 確かめる。",
+        "reading": "ほうこう",
         "type": "on",
-        "sentenceWithRuby": "そちらの 方。",
-        "sentenceHiragana": "そちらの ほう。"
+        "targetWord": "方向",
+        "sentenceWithRuby": "方向を 確かめる。",
+        "sentenceHiragana": "ほうこうを たしかめる。"
       },
       {
         "id": "U+65B9-ex-5",
-        "sentence": "やり方を ならう。",
+        "sentence": "あの 方は 先生です。",
         "reading": "かた",
         "type": "kun",
-        "sentenceWithRuby": "やり方を ならう。",
-        "sentenceHiragana": "やりかたを ならう。"
+        "sentenceWithRuby": "あの 方は 先生です。",
+        "sentenceHiragana": "あの かたは せんせいです。"
       }
     ]
   },
