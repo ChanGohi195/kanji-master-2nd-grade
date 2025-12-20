@@ -6445,43 +6445,46 @@
     "examples": [
       {
         "id": "U+6B69-ex-1",
-        "sentence": "みちを 歩く。",
-        "reading": "あるく",
+        "sentence": "公園を 歩く。",
+        "reading": "ある.く",
         "type": "kun",
-        "sentenceWithRuby": "みちを 歩く。",
-        "sentenceHiragana": "みちを あるく。"
+        "sentenceWithRuby": "公園を 歩く。",
+        "sentenceHiragana": "こうえんを あるく。"
       },
       {
         "id": "U+6B69-ex-2",
-        "sentence": "さん歩に いく。",
-        "reading": "ほ",
+        "sentence": "さん歩に 出かける。",
+        "reading": "さんぽ",
         "type": "on",
-        "sentenceWithRuby": "さん歩に いく。",
-        "sentenceHiragana": "さんぽに いく。"
+        "targetWord": "さん歩",
+        "sentenceWithRuby": "さん歩に 出かける。",
+        "sentenceHiragana": "さんぽに でかける。"
       },
       {
         "id": "U+6B69-ex-3",
-        "sentence": "みちを 歩く。",
-        "reading": "あるく",
-        "type": "kun",
-        "sentenceWithRuby": "みちを 歩く。",
-        "sentenceHiragana": "みちを あるく。"
+        "sentence": "歩道を わたる。",
+        "reading": "ほどう",
+        "type": "on",
+        "targetWord": "歩道",
+        "sentenceWithRuby": "歩道を わたる。",
+        "sentenceHiragana": "ほどうを わたる。"
       },
       {
         "id": "U+6B69-ex-4",
-        "sentence": "さん歩する。",
-        "reading": "ほ",
+        "sentence": "一歩 前に 出る。",
+        "reading": "いっぽ",
         "type": "on",
-        "sentenceWithRuby": "さん歩する。",
-        "sentenceHiragana": "さんほする。"
+        "targetWord": "一歩",
+        "sentenceWithRuby": "一歩 前に 出る。",
+        "sentenceHiragana": "いっぽ まえに でる。"
       },
       {
         "id": "U+6B69-ex-5",
-        "sentence": "歩いて いく。",
-        "reading": "ある",
+        "sentence": "歩いて 学校に 行く。",
+        "reading": "ある.く",
         "type": "kun",
-        "sentenceWithRuby": "歩いて いく。",
-        "sentenceHiragana": "あるいて いく。"
+        "sentenceWithRuby": "歩いて 学校に 行く。",
+        "sentenceHiragana": "あるいて がっこうに いく。"
       }
     ]
   },
