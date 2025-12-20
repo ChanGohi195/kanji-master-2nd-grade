@@ -6399,43 +6399,44 @@
     "examples": [
       {
         "id": "U+7C73-ex-1",
+        "sentence": "お米を あらう。",
+        "reading": "こめ",
+        "type": "kun",
+        "sentenceWithRuby": "お米を あらう。",
+        "sentenceHiragana": "おこめを あらう。"
+      },
+      {
+        "id": "U+7C73-ex-2",
+        "sentence": "白米が おいしい。",
+        "reading": "はくまい",
+        "type": "on",
+        "targetWord": "白米",
+        "sentenceWithRuby": "白米が おいしい。",
+        "sentenceHiragana": "はくまいが おいしい。"
+      },
+      {
+        "id": "U+7C73-ex-3",
+        "sentence": "しん米の きせつだ。",
+        "reading": "まい",
+        "type": "on",
+        "sentenceWithRuby": "しん米の きせつだ。",
+        "sentenceHiragana": "しんまいの きせつだ。"
+      },
+      {
+        "id": "U+7C73-ex-4",
+        "sentence": "米こくに 行く。",
+        "reading": "べい",
+        "type": "on",
+        "sentenceWithRuby": "米こくに 行く。",
+        "sentenceHiragana": "べいこくに いく。"
+      },
+      {
+        "id": "U+7C73-ex-5",
         "sentence": "米を たく。",
         "reading": "こめ",
         "type": "kun",
         "sentenceWithRuby": "米を たく。",
         "sentenceHiragana": "こめを たく。"
-      },
-      {
-        "id": "U+7C73-ex-2",
-        "sentence": "白い 米。",
-        "reading": "こめ",
-        "type": "kun",
-        "sentenceWithRuby": "白い 米。",
-        "sentenceHiragana": "しろい こめ。"
-      },
-      {
-        "id": "U+7C73-ex-3",
-        "sentence": "米を とぐ。",
-        "reading": "こめ",
-        "type": "kun",
-        "sentenceWithRuby": "米を とぐ。",
-        "sentenceHiragana": "こめを とぐ。"
-      },
-      {
-        "id": "U+7C73-ex-4",
-        "sentence": "米こくを たべる。",
-        "reading": "べい",
-        "type": "on",
-        "sentenceWithRuby": "米こくを たべる。",
-        "sentenceHiragana": "べいこくを たべる。"
-      },
-      {
-        "id": "U+7C73-ex-5",
-        "sentence": "あたらしい 米。",
-        "reading": "こめ",
-        "type": "kun",
-        "sentenceWithRuby": "あたらしい 米。",
-        "sentenceHiragana": "あたらしい こめ。"
       }
     ]
   },
