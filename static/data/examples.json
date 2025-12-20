@@ -5986,42 +5986,43 @@
       {
         "id": "U+58F2-ex-1",
         "sentence": "おかしを 売る。",
-        "reading": "うる",
+        "reading": "う.る",
         "type": "kun",
         "sentenceWithRuby": "おかしを 売る。",
         "sentenceHiragana": "おかしを うる。"
       },
       {
         "id": "U+58F2-ex-2",
-        "sentence": "売店で かう。",
+        "sentence": "売てんで かう。",
         "reading": "ばい",
         "type": "on",
-        "sentenceWithRuby": "売店で かう。",
+        "sentenceWithRuby": "売てんで かう。",
         "sentenceHiragana": "ばいてんで かう。"
       },
       {
         "id": "U+58F2-ex-3",
-        "sentence": "ものを 売る。",
-        "reading": "うる",
+        "sentence": "本を 売る。",
+        "reading": "う.る",
         "type": "kun",
-        "sentenceWithRuby": "ものを 売る。",
-        "sentenceHiragana": "ものを うるる。"
+        "sentenceWithRuby": "本を 売る。",
+        "sentenceHiragana": "ほんを うる。"
       },
       {
         "id": "U+58F2-ex-4",
-        "sentence": "売てんする。",
-        "reading": "ばい",
+        "sentence": "売買を する。",
+        "reading": "ばいばい",
         "type": "on",
-        "sentenceWithRuby": "売てんする。",
-        "sentenceHiragana": "ばいてんする。"
+        "targetWord": "売買",
+        "sentenceWithRuby": "売買を する。",
+        "sentenceHiragana": "ばいばいを する。"
       },
       {
         "id": "U+58F2-ex-5",
-        "sentence": "売り ものが ある。",
-        "reading": "う",
+        "sentence": "売りものが ある。",
+        "reading": "う.る",
         "type": "kun",
-        "sentenceWithRuby": "売り ものが ある。",
-        "sentenceHiragana": "うり ものが ある。"
+        "sentenceWithRuby": "売りものが ある。",
+        "sentenceHiragana": "うりものが ある。"
       }
     ]
   },
