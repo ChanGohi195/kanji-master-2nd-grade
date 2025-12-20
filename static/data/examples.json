@@ -5482,43 +5482,46 @@
     "examples": [
       {
         "id": "U+5F53-ex-1",
-        "sentence": "くじに 当たる。",
-        "reading": "あたる",
+        "sentence": "籤に 当たる。",
+        "reading": "あ.たる",
         "type": "kun",
-        "sentenceWithRuby": "くじに 当たる。",
+        "sentenceWithRuby": "籤[くじ]に 当たる。",
         "sentenceHiragana": "くじに あたる。"
       },
       {
         "id": "U+5F53-ex-2",
         "sentence": "本当だよ。",
-        "reading": "とう",
+        "reading": "ほんとう",
         "type": "on",
-        "sentenceWithRuby": "本当だよ。",
+        "targetWord": "本当",
+        "sentenceWithRuby": "本当[ほんとう]だよ。",
         "sentenceHiragana": "ほんとうだよ。"
       },
       {
         "id": "U+5F53-ex-3",
-        "sentence": "くじが 当たる。",
-        "reading": "あたる",
-        "type": "kun",
-        "sentenceWithRuby": "くじが 当たる。",
-        "sentenceHiragana": "くじが あたるたる。"
+        "sentence": "当日に 行く。",
+        "reading": "とうじつ",
+        "type": "on",
+        "targetWord": "当日",
+        "sentenceWithRuby": "当日[とうじつ]に 行[い]く。",
+        "sentenceHiragana": "とうじつに いく。"
       },
       {
         "id": "U+5F53-ex-4",
-        "sentence": "当ばんする。",
-        "reading": "とう",
+        "sentence": "当番する。",
+        "reading": "とうばん",
         "type": "on",
-        "sentenceWithRuby": "当ばんする。",
+        "targetWord": "当番",
+        "sentenceWithRuby": "当番[とうばん]する。",
         "sentenceHiragana": "とうばんする。"
       },
       {
         "id": "U+5F53-ex-5",
-        "sentence": "当たり まえ。",
-        "reading": "あ",
+        "sentence": "当たり前。",
+        "reading": "あ.たり",
         "type": "kun",
-        "sentenceWithRuby": "当たり まえ。",
-        "sentenceHiragana": "あたり まえ。"
+        "sentenceWithRuby": "当たり前[まえ]。",
+        "sentenceHiragana": "あたりまえ。"
       }
     ]
   },
