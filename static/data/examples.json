@@ -7136,7 +7136,7 @@
       {
         "id": "U+66DC-ex-1",
         "sentence": "日曜日に あそぶ。",
-        "reading": "よう",
+        "reading": "にちよう",
         "type": "on",
         "sentenceWithRuby": "日曜日に あそぶ。",
         "sentenceHiragana": "にちようびに あそぶ。"
@@ -7144,34 +7144,34 @@
       {
         "id": "U+66DC-ex-2",
         "sentence": "月曜日から がっこう。",
-        "reading": "よう",
+        "reading": "げつよう",
         "type": "on",
         "sentenceWithRuby": "月曜日から がっこう。",
         "sentenceHiragana": "げつようびから がっこう。"
       },
       {
         "id": "U+66DC-ex-3",
-        "sentence": "月曜日に あう。",
-        "reading": "よう",
+        "sentence": "火曜日に あう。",
+        "reading": "かよう",
         "type": "on",
-        "sentenceWithRuby": "月[げつ]曜日に あう。",
-        "sentenceHiragana": "げつよう日に あう。"
+        "sentenceWithRuby": "火曜日に あう。",
+        "sentenceHiragana": "かようびに あう。"
       },
       {
         "id": "U+66DC-ex-4",
         "sentence": "何曜日？",
-        "reading": "よう",
+        "reading": "なんよう",
         "type": "on",
-        "sentenceWithRuby": "何[なん]曜日？",
-        "sentenceHiragana": "なんよう日？"
+        "sentenceWithRuby": "何曜日？",
+        "sentenceHiragana": "なんようび？"
       },
       {
         "id": "U+66DC-ex-5",
         "sentence": "金曜日が すき。",
-        "reading": "よう",
+        "reading": "きんよう",
         "type": "on",
-        "sentenceWithRuby": "金[きん]曜日が すき。",
-        "sentenceHiragana": "きんよう日が すき。"
+        "sentenceWithRuby": "金曜日が すき。",
+        "sentenceHiragana": "きんようびが すき。"
       }
     ]
   },
