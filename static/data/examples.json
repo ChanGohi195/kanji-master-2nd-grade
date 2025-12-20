@@ -6768,7 +6768,7 @@
       {
         "id": "U+660E-ex-1",
         "sentence": "明るい へや。",
-        "reading": "あかるい",
+        "reading": "あか.るい",
         "type": "kun",
         "sentenceWithRuby": "明るい へや。",
         "sentenceHiragana": "あかるい へや。"
@@ -6778,32 +6778,34 @@
         "sentence": "明日 あそぼう。",
         "reading": "あした",
         "type": "kun",
+        "targetWord": "明日",
         "sentenceWithRuby": "明日 あそぼう。",
         "sentenceHiragana": "あした あそぼう。"
       },
       {
         "id": "U+660E-ex-3",
-        "sentence": "明るい へや。",
-        "reading": "あかるい",
+        "sentence": "明かりを つける。",
+        "reading": "あ.かり",
         "type": "kun",
-        "sentenceWithRuby": "明るい へや。",
-        "sentenceHiragana": "あかるい へや。"
+        "sentenceWithRuby": "明かりを つける。",
+        "sentenceHiragana": "あかりを つける。"
       },
       {
         "id": "U+660E-ex-4",
-        "sentence": "明かり。",
-        "reading": "あ",
-        "type": "kun",
-        "sentenceWithRuby": "明かり。",
-        "sentenceHiragana": "あかり。"
+        "sentence": "説明を きく。",
+        "reading": "せつめい",
+        "type": "on",
+        "targetWord": "説明",
+        "sentenceWithRuby": "説明を きく。",
+        "sentenceHiragana": "せつめいを きく。"
       },
       {
         "id": "U+660E-ex-5",
-        "sentence": "明日 あう。",
-        "reading": "めい",
-        "type": "on",
-        "sentenceWithRuby": "明日 あう。",
-        "sentenceHiragana": "めい日 あう。"
+        "sentence": "明るい そら。",
+        "reading": "あか.るい",
+        "type": "kun",
+        "sentenceWithRuby": "明るい そら。",
+        "sentenceHiragana": "あかるい そら。"
       }
     ]
   },
