@@ -6914,34 +6914,38 @@
       {
         "id": "U+9580-ex-2",
         "sentence": "正門から はいる。",
-        "reading": "もん",
+        "reading": "せいもん",
         "type": "on",
+        "targetWord": "正門",
         "sentenceWithRuby": "正門から はいる。",
         "sentenceHiragana": "せいもんから はいる。"
       },
       {
         "id": "U+9580-ex-3",
-        "sentence": "門を とおる。",
-        "reading": "もん",
+        "sentence": "校門の まえで まつ。",
+        "reading": "こうもん",
         "type": "on",
-        "sentenceWithRuby": "門を とおる。",
-        "sentenceHiragana": "もんを とおる。"
+        "targetWord": "校門",
+        "sentenceWithRuby": "校門の まえで まつ。",
+        "sentenceHiragana": "こうもんの まえで まつ。"
       },
       {
         "id": "U+9580-ex-4",
-        "sentence": "門の まえ。",
-        "reading": "かど",
+        "sentence": "門出を いわう。",
+        "reading": "かどで",
         "type": "kun",
-        "sentenceWithRuby": "門の まえ。",
-        "sentenceHiragana": "かどの まえ。"
+        "targetWord": "門出",
+        "sentenceWithRuby": "門出を いわう。",
+        "sentenceHiragana": "かどでを いわう。"
       },
       {
         "id": "U+9580-ex-5",
-        "sentence": "正門から はいる。",
-        "reading": "もん",
+        "sentence": "入門する。",
+        "reading": "にゅうもん",
         "type": "on",
-        "sentenceWithRuby": "正[せい]門から はいる。",
-        "sentenceHiragana": "せいもんから はいる。"
+        "targetWord": "入門",
+        "sentenceWithRuby": "入門する。",
+        "sentenceHiragana": "にゅうもんする。"
       }
     ]
   },
