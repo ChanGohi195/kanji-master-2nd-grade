@@ -27,6 +27,7 @@
 	let container: HTMLDivElement;
 	let writer: HanziWriter | null = null;
 	let quizActive = $state(false);
+	let loadError = $state(false);
 	let currentCharacter = '';
 
 	onMount(() => {
@@ -39,7 +40,7 @@
 		}
 	});
 
-	function createWriter() {
+	async function createWriter() {
 		if (writer) {
 			writer.cancelQuiz();
 		}
@@ -48,24 +49,39 @@
 			container.innerHTML = '';
 		}
 
-		writer = HanziWriter.create(container, character, {
-			width: size,
-			height: size,
-			padding: 5,
-			showOutline,
-			showCharacter,
-			strokeAnimationSpeed,
-			delayBetweenStrokes,
-			strokeColor: '#333',
-			outlineColor: '#ddd',
-			drawingColor: '#333',
-			drawingWidth: 8,
-			showHintAfterMisses: 2,
-			highlightOnComplete: true,
-			charDataLoader: async (char: string) => {
-				const encoded = encodeURIComponent(char); const url = 'https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encoded + '.json'; const res = await fetch(url); return res.json();
-			}
-		});
+		loadError = false;
+
+		try {
+			writer = HanziWriter.create(container, character, {
+				width: size,
+				height: size,
+				padding: 5,
+				showOutline,
+				showCharacter,
+				strokeAnimationSpeed,
+				delayBetweenStrokes,
+				strokeColor: '#333',
+				outlineColor: '#ddd',
+				drawingColor: '#333',
+				drawingWidth: 8,
+				showHintAfterMisses: 2,
+				highlightOnComplete: true,
+				charDataLoader: async (char: string) => {
+					const encoded = encodeURIComponent(char);
+					const url = 'https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encoded + '.json';
+					const res = await fetch(url);
+					if (!res.ok) {
+						throw new Error('Character data not found');
+					}
+					return res.json();
+				},
+				onLoadCharDataError: () => {
+					loadError = true;
+				}
+			});
+		} catch (e) {
+			loadError = true;
+		}
 	}
 
 	$effect(() => {
@@ -127,11 +143,20 @@
 	}
 </script>
 
-<div
-	bind:this={container}
-	class="kanji-writer rounded-2xl border-4 border-amber-200 bg-white"
-	style="width: {size}px; height: {size}px;"
-></div>
+{#if loadError}
+	<div
+		class="kanji-writer rounded-2xl border-4 border-amber-200 bg-white flex items-center justify-center"
+		style="width: {size}px; height: {size}px;"
+	>
+		<span class="text-gray-800 font-bold" style="font-size: {size * 0.7}px; line-height: 1;">{character}</span>
+	</div>
+{:else}
+	<div
+		bind:this={container}
+		class="kanji-writer rounded-2xl border-4 border-amber-200 bg-white"
+		style="width: {size}px; height: {size}px;"
+	></div>
+{/if}
 
 <style>
 	.kanji-writer {
