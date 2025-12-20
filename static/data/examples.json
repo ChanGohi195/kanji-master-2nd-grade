@@ -6675,43 +6675,45 @@
     "examples": [
       {
         "id": "U+59B9-ex-1",
-        "sentence": "妹と あそぶ。",
+        "sentence": "妹と こうえんで あそぶ。",
         "reading": "いもうと",
         "type": "kun",
-        "sentenceWithRuby": "妹と あそぶ。",
-        "sentenceHiragana": "いもうとと あそぶ。"
+        "sentenceWithRuby": "妹と こうえんで あそぶ。",
+        "sentenceHiragana": "いもうとと こうえんで あそぶ。"
       },
       {
         "id": "U+59B9-ex-2",
-        "sentence": "妹は かわいい。",
-        "reading": "いもうと",
-        "type": "kun",
-        "sentenceWithRuby": "妹は かわいい。",
-        "sentenceHiragana": "いもうとは かわいい。"
+        "sentence": "し妹で おそろいの ふくを きる。",
+        "reading": "しまい",
+        "type": "on",
+        "targetWord": "し妹",
+        "sentenceWithRuby": "し妹で おそろいの ふくを きる。",
+        "sentenceHiragana": "しまいで おそろいの ふくを きる。"
       },
       {
         "id": "U+59B9-ex-3",
-        "sentence": "妹と あそぶ。",
+        "sentence": "妹が うまれた。",
         "reading": "いもうと",
         "type": "kun",
-        "sentenceWithRuby": "妹と あそぶ。",
-        "sentenceHiragana": "いもうとと あそぶ。"
+        "sentenceWithRuby": "妹が うまれた。",
+        "sentenceHiragana": "いもうとが うまれた。"
       },
       {
         "id": "U+59B9-ex-4",
-        "sentence": "妹だいで いく。",
-        "reading": "まい",
+        "sentence": "し妹で おでかけする。",
+        "reading": "しまい",
         "type": "on",
-        "sentenceWithRuby": "妹だいで いく。",
-        "sentenceHiragana": "まいだいで いく。"
+        "targetWord": "し妹",
+        "sentenceWithRuby": "し妹で おでかけする。",
+        "sentenceHiragana": "しまいで おでかけする。"
       },
       {
         "id": "U+59B9-ex-5",
-        "sentence": "妹が わらう。",
+        "sentence": "妹に ほんを よんであげる。",
         "reading": "いもうと",
         "type": "kun",
-        "sentenceWithRuby": "妹が わらう。",
-        "sentenceHiragana": "いもうとが わらう。"
+        "sentenceWithRuby": "妹に ほんを よんであげる。",
+        "sentenceHiragana": "いもうとに ほんを よんであげる。"
       }
     ]
   },
