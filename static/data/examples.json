@@ -6093,19 +6093,20 @@
       },
       {
         "id": "U+9EA6-ex-3",
-        "sentence": "麦が そだつ。",
+        "sentence": "麦茶を 飲む。",
         "reading": "むぎ",
         "type": "kun",
-        "sentenceWithRuby": "麦が そだつ。",
-        "sentenceHiragana": "むぎが そだつ。"
+        "sentenceWithRuby": "麦茶を 飲む。",
+        "sentenceHiragana": "むぎちゃを のむ。"
       },
       {
         "id": "U+9EA6-ex-4",
-        "sentence": "小麦こを つかう。",
-        "reading": "ばく",
-        "type": "on",
-        "sentenceWithRuby": "小麦こを つかう。",
-        "sentenceHiragana": "小ばくこを つかう。"
+        "sentence": "小麦粉を 使う。",
+        "reading": "こむぎこ",
+        "type": "kun",
+        "targetWord": "小麦粉",
+        "sentenceWithRuby": "小麦粉を 使う。",
+        "sentenceHiragana": "こむぎこを つかう。"
       },
       {
         "id": "U+9EA6-ex-5",
