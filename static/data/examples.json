@@ -5573,7 +5573,7 @@
       {
         "id": "U+7B54-ex-1",
         "sentence": "答えを かく。",
-        "reading": "こたえ",
+        "reading": "こた.え",
         "type": "kun",
         "sentenceWithRuby": "答えを かく。",
         "sentenceHiragana": "こたえを かく。"
@@ -5581,34 +5581,36 @@
       {
         "id": "U+7B54-ex-2",
         "sentence": "しつもんに 答える。",
-        "reading": "こたえる",
+        "reading": "こた.える",
         "type": "kun",
         "sentenceWithRuby": "しつもんに 答える。",
         "sentenceHiragana": "しつもんに こたえる。"
       },
       {
         "id": "U+7B54-ex-3",
-        "sentence": "しつもんに 答える。",
-        "reading": "こたえる",
-        "type": "kun",
-        "sentenceWithRuby": "しつもんに 答える。",
-        "sentenceHiragana": "しつもんに こたえるえる。"
+        "sentence": "かい答する。",
+        "reading": "とう",
+        "type": "on",
+        "targetWord": "回答",
+        "sentenceWithRuby": "かい答する。",
+        "sentenceHiragana": "かいとうする。"
       },
       {
         "id": "U+7B54-ex-4",
-        "sentence": "せい答を かく。",
+        "sentence": "正答を かく。",
         "reading": "とう",
         "type": "on",
-        "sentenceWithRuby": "せい答を かく。",
+        "targetWord": "正答",
+        "sentenceWithRuby": "正[せい]答を かく。",
         "sentenceHiragana": "せいとうを かく。"
       },
       {
         "id": "U+7B54-ex-5",
         "sentence": "正しい 答え。",
-        "reading": "こたえ",
+        "reading": "こた.え",
         "type": "kun",
         "sentenceWithRuby": "正[せい]しい 答え。",
-        "sentenceHiragana": "せいしい こたええ。"
+        "sentenceHiragana": "ただしい こたえ。"
       }
     ]
   },
