@@ -6722,41 +6722,46 @@
       {
         "id": "U+4E07-ex-1",
         "sentence": "一万円を もらう。",
-        "reading": "まん",
+        "reading": "いちまん",
         "type": "on",
+        "targetWord": "一万",
         "sentenceWithRuby": "一万円を もらう。",
         "sentenceHiragana": "いちまんえんを もらう。"
       },
       {
         "id": "U+4E07-ex-2",
         "sentence": "万が一に そなえる。",
-        "reading": "まん",
+        "reading": "まんがいち",
         "type": "on",
+        "targetWord": "万が一",
         "sentenceWithRuby": "万が一に そなえる。",
         "sentenceHiragana": "まんがいちに そなえる。"
       },
       {
         "id": "U+4E07-ex-3",
-        "sentence": "一万えん。",
-        "reading": "まん",
+        "sentence": "十万円 ためる。",
+        "reading": "じゅうまん",
         "type": "on",
-        "sentenceWithRuby": "一[いち]万えん。",
-        "sentenceHiragana": "いちまんえん。"
+        "targetWord": "十万",
+        "sentenceWithRuby": "十万円 ためる。",
+        "sentenceHiragana": "じゅうまんえん ためる。"
       },
       {
         "id": "U+4E07-ex-4",
         "sentence": "万年ひつを つかう。",
-        "reading": "まん",
+        "reading": "まんねん",
         "type": "on",
+        "targetWord": "万年",
         "sentenceWithRuby": "万年ひつを つかう。",
         "sentenceHiragana": "まんねんひつを つかう。"
       },
       {
         "id": "U+4E07-ex-5",
         "sentence": "百万の ほし。",
-        "reading": "まん",
+        "reading": "ひゃくまん",
         "type": "on",
-        "sentenceWithRuby": "百[ひゃく]万の ほし。",
+        "targetWord": "百万",
+        "sentenceWithRuby": "百万の ほし。",
         "sentenceHiragana": "ひゃくまんの ほし。"
       }
     ]
