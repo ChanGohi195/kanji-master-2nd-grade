@@ -7090,42 +7090,46 @@
       {
         "id": "U+7528-ex-1",
         "sentence": "用じが ある。",
-        "reading": "よう",
+        "reading": "ようじ",
         "type": "on",
+        "targetWord": "用じ",
         "sentenceWithRuby": "用じが ある。",
         "sentenceHiragana": "ようじが ある。"
       },
       {
         "id": "U+7528-ex-2",
-        "sentence": "し用 する。",
-        "reading": "よう",
+        "sentence": "し用する。",
+        "reading": "しよう",
         "type": "on",
-        "sentenceWithRuby": "し用 する。",
-        "sentenceHiragana": "しよう する。"
+        "targetWord": "し用",
+        "sentenceWithRuby": "し用する。",
+        "sentenceHiragana": "しようする。"
       },
       {
         "id": "U+7528-ex-3",
-        "sentence": "用いる。",
-        "reading": "よう",
+        "sentence": "用いを する。",
+        "reading": "ようい",
         "type": "on",
-        "sentenceWithRuby": "用いる。",
-        "sentenceHiragana": "よういる。"
+        "targetWord": "用い",
+        "sentenceWithRuby": "用いを する。",
+        "sentenceHiragana": "よういを する。"
       },
       {
         "id": "U+7528-ex-4",
-        "sentence": "用じを たす。",
-        "reading": "よう",
+        "sentence": "り用する。",
+        "reading": "りよう",
         "type": "on",
-        "sentenceWithRuby": "用じを たす。",
-        "sentenceHiragana": "ようじを たす。"
+        "targetWord": "り用",
+        "sentenceWithRuby": "り用する。",
+        "sentenceHiragana": "りようする。"
       },
       {
         "id": "U+7528-ex-5",
-        "sentence": "用いて つくる。",
-        "reading": "もち",
+        "sentence": "はさみを 用いる。",
+        "reading": "もち.いる",
         "type": "kun",
-        "sentenceWithRuby": "用いて つくる。",
-        "sentenceHiragana": "もちいて つくる。"
+        "sentenceWithRuby": "はさみを 用いる。",
+        "sentenceHiragana": "はさみを もちいる。"
       }
     ]
   },
