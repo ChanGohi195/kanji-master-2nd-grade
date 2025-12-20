@@ -6656,20 +6656,18 @@
       },
       {
         "id": "U+6BCE-ex-4",
-        "sentence": "日ごとに あたたかくなる。",
-        "reading": "ひごと",
+        "sentence": "日毎に あたたかくなる。",
+        "reading": "ごと",
         "type": "kun",
-        "targetWord": "日ごと",
-        "sentenceWithRuby": "日ごとに あたたかくなる。",
+        "sentenceWithRuby": "日毎に あたたかくなる。",
         "sentenceHiragana": "ひごとに あたたかくなる。"
       },
       {
         "id": "U+6BCE-ex-5",
-        "sentence": "年ごとに 大きくなる。",
-        "reading": "としごと",
+        "sentence": "年毎に 大きくなる。",
+        "reading": "ごと",
         "type": "kun",
-        "targetWord": "年ごと",
-        "sentenceWithRuby": "年ごとに 大きくなる。",
+        "sentenceWithRuby": "年毎に 大きくなる。",
         "sentenceHiragana": "としごとに おおきくなる。"
       }
     ]
