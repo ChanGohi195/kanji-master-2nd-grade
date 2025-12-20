@@ -137,12 +137,13 @@
 			timeSpent: Date.now() - startTime
 		});
 
-		// ぶんしょうモード進捗を記録
+		// ぶんしょうモード進捗を記録（例文総数を渡す）
 		await recordBunshoStudy(
 			currentExample.kanji.kanjiId,
 			currentExample.example.id,
 			'kaki',
-			isCorrect
+			isCorrect,
+			currentExample.kanji.examples.length
 		);
 
 		// 正解時はSE再生
@@ -202,7 +203,8 @@
 			currentExample.kanji.kanjiId,
 			currentExample.example.id,
 			'kaki',
-			isCorrect
+			isCorrect,
+			currentExample.kanji.examples.length
 		);
 
 		// 正解・惜しい時はSE再生
@@ -277,7 +279,8 @@
 			currentExample.kanji.kanjiId,
 			currentExample.example.id,
 			'kaki',
-			isCorrect
+			isCorrect,
+			currentExample.kanji.examples.length
 		);
 
 		if (isCorrect) {

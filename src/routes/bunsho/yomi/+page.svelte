@@ -18,6 +18,7 @@
 		sentenceWithRuby?: string;
 		reading: string;
 		type: 'kun' | 'on';
+		targetWord?: string;
 	}
 
 	interface KanjiExample {
@@ -84,14 +85,23 @@
 		if (!currentExample) return;
 
 		const correct = currentExample.example.reading;
-		const allReadings = allExamples
-			.flatMap(k => k.examples.map(e => e.reading))
-			.filter(r => r !== correct);
 
-		const shuffled = [...new Set(allReadings)].sort(() => Math.random() - 0.5);
-		const wrongChoices = shuffled.slice(0, 3);
-
-		choices = [correct, ...wrongChoices].sort(() => Math.random() - 0.5);
+		// targetWordがある場合は同じ漢字の他の例文から選択肢を取る
+		if (currentExample.example.targetWord) {
+			const sameKanjiReadings = currentExample.kanji.examples
+				.map(e => e.reading)
+				.filter(r => r !== correct);
+			const shuffled = [...new Set(sameKanjiReadings)].sort(() => Math.random() - 0.5);
+			const wrongChoices = shuffled.slice(0, 3);
+			choices = [correct, ...wrongChoices].sort(() => Math.random() - 0.5);
+		} else {
+			const allReadings = allExamples
+				.flatMap(k => k.examples.map(e => e.reading))
+				.filter(r => r !== correct);
+			const shuffled = [...new Set(allReadings)].sort(() => Math.random() - 0.5);
+			const wrongChoices = shuffled.slice(0, 3);
+			choices = [correct, ...wrongChoices].sort(() => Math.random() - 0.5);
+		}
 	}
 
 	async function handleSelect(answer: string) {
@@ -110,12 +120,13 @@
 			timeSpent: Date.now() - startTime
 		});
 
-		// ぶんしょうモード進捗を記録
+		// ぶんしょうモード進捗を記録（例文総数を渡す）
 		await recordBunshoStudy(
 			currentExample.kanji.kanjiId,
 			currentExample.example.id,
 			'yomi',
-			isCorrect
+			isCorrect,
+			currentExample.kanji.examples.length
 		);
 
 		if (isCorrect) {
@@ -181,7 +192,11 @@
 			<div class="w-1/2 flex flex-col justify-center items-center p-4 bg-white/50">
 				<div class="mb-4 text-center">
 					<span class="inline-block rounded-full bg-yellow-100 px-4 py-2 text-xl font-bold text-yellow-700">
-						「{currentExample.kanji.character}」の よみかたは？
+						{#if currentExample.example.targetWord}
+							「{currentExample.example.targetWord}」の よみかたは？
+						{:else}
+							「{currentExample.kanji.character}」の よみかたは？
+						{/if}
 					</span>
 				</div>
 

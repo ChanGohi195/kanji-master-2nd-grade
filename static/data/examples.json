@@ -7135,43 +7135,66 @@
     "examples": [
       {
         "id": "U+66DC-ex-1",
-        "sentence": "日曜日に あそぶ。",
+        "sentence": "日曜日は おやすみ。",
         "reading": "にちよう",
         "type": "on",
-        "sentenceWithRuby": "日曜日に あそぶ。",
-        "sentenceHiragana": "にちようびに あそぶ。"
+        "targetWord": "日曜",
+        "sentenceWithRuby": "日曜日は おやすみ。",
+        "sentenceHiragana": "にちようびは おやすみ。"
       },
       {
         "id": "U+66DC-ex-2",
-        "sentence": "月曜日から がっこう。",
+        "sentence": "月曜日、 一しゅうかんが はじまる。",
         "reading": "げつよう",
         "type": "on",
-        "sentenceWithRuby": "月曜日から がっこう。",
-        "sentenceHiragana": "げつようびから がっこう。"
+        "targetWord": "月曜",
+        "sentenceWithRuby": "月曜日、 一しゅうかんが はじまる。",
+        "sentenceHiragana": "げつようび、 いっしゅうかんが はじまる。"
       },
       {
         "id": "U+66DC-ex-3",
-        "sentence": "火曜日に あう。",
+        "sentence": "火曜日は おんがくの じかん。",
         "reading": "かよう",
         "type": "on",
-        "sentenceWithRuby": "火曜日に あう。",
-        "sentenceHiragana": "かようびに あう。"
+        "targetWord": "火曜",
+        "sentenceWithRuby": "火曜日は おんがくの じかん。",
+        "sentenceHiragana": "かようびは おんがくの じかん。"
       },
       {
         "id": "U+66DC-ex-4",
-        "sentence": "何曜日？",
-        "reading": "なんよう",
+        "sentence": "水曜日は プールの ひ。",
+        "reading": "すいよう",
         "type": "on",
-        "sentenceWithRuby": "何曜日？",
-        "sentenceHiragana": "なんようび？"
+        "targetWord": "水曜",
+        "sentenceWithRuby": "水曜日は プールの ひ。",
+        "sentenceHiragana": "すいようびは ぷーるの ひ。"
       },
       {
         "id": "U+66DC-ex-5",
-        "sentence": "金曜日が すき。",
+        "sentence": "木曜日に としょしつへ いく。",
+        "reading": "もくよう",
+        "type": "on",
+        "targetWord": "木曜",
+        "sentenceWithRuby": "木曜日に としょしつへ いく。",
+        "sentenceHiragana": "もくようびに としょしつへ いく。"
+      },
+      {
+        "id": "U+66DC-ex-6",
+        "sentence": "金曜日、 あしたは おやすみ。",
         "reading": "きんよう",
         "type": "on",
-        "sentenceWithRuby": "金曜日が すき。",
-        "sentenceHiragana": "きんようびが すき。"
+        "targetWord": "金曜",
+        "sentenceWithRuby": "金曜日、 あしたは おやすみ。",
+        "sentenceHiragana": "きんようび、 あしたは おやすみ。"
+      },
+      {
+        "id": "U+66DC-ex-7",
+        "sentence": "土曜日に かぞくと でかける。",
+        "reading": "どよう",
+        "type": "on",
+        "targetWord": "土曜",
+        "sentenceWithRuby": "土曜日に かぞくと でかける。",
+        "sentenceHiragana": "どようびに かぞくと でかける。"
       }
     ]
   },

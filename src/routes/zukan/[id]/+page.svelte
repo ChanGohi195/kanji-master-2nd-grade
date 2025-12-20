@@ -11,6 +11,7 @@
 	let kanji: Kanji | null = $state(null);
 	let progress: KanjiProgress | null = $state(null);
 	let loading = $state(true);
+	let totalExamples = $state(5); // 例文総数
 
 	// KanjiWriter動的インポート
 	let KanjiWriterComponent: any = $state(null);
@@ -25,6 +26,14 @@
 		kanji = kanjiList.find((k) => k.id === kanjiId) || null;
 		if (kanji) {
 			progress = (await getProgress(kanjiId)) || null;
+
+			// 例文数を取得
+			const exRes = await fetch('/data/examples.json');
+			const examples = await exRes.json();
+			const kanjiExamples = examples.find((e: any) => e.kanjiId === kanjiId);
+			if (kanjiExamples) {
+				totalExamples = kanjiExamples.examples.length;
+			}
 		}
 
 		// KanjiWriter読み込み
@@ -174,14 +183,14 @@
 						<span class="text-3xl">{getGrowthIcon(getBunshoYomiLevel())}</span>
 						<div class="text-left">
 							<div class="text-lg font-bold text-gray-700">📖 よみ</div>
-							<div class="text-sm text-gray-400">{progress?.bunshoYomiCompleted?.length ?? 0}/5</div>
+							<div class="text-sm text-gray-400">{progress?.bunshoYomiCompleted?.length ?? 0}/{totalExamples}</div>
 						</div>
 					</div>
 					<div class="flex items-center justify-center gap-3">
 						<span class="text-3xl">{getGrowthIcon(getBunshoKakiLevel())}</span>
 						<div class="text-left">
 							<div class="text-lg font-bold text-gray-700">✏️ かき</div>
-							<div class="text-sm text-gray-400">{progress?.bunshoKakiCompleted?.length ?? 0}/5</div>
+							<div class="text-sm text-gray-400">{progress?.bunshoKakiCompleted?.length ?? 0}/{totalExamples}</div>
 						</div>
 					</div>
 				</div>

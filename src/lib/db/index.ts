@@ -79,7 +79,8 @@ export async function recordBunshoStudy(
 	kanjiId: string,
 	exampleId: string,
 	mode: 'yomi' | 'kaki',
-	isCorrect: boolean
+	isCorrect: boolean,
+	totalExamples: number = 5
 ) {
 	if (!isCorrect) return;
 
@@ -95,7 +96,16 @@ export async function recordBunshoStudy(
 	// まだ正解していない例文なら追加
 	if (!progress[completedField].includes(exampleId)) {
 		progress[completedField].push(exampleId);
-		progress[levelField] = Math.min(5, progress[completedField].length) as GrowthLevel;
+		// 例文総数に対する正解率でレベルを計算（5段階）
+		const completedCount = progress[completedField].length;
+		const ratio = completedCount / totalExamples;
+		let level: GrowthLevel;
+		if (ratio >= 1.0) level = 5;      // 100% = 花丸
+		else if (ratio >= 0.8) level = 4; // 80%以上
+		else if (ratio >= 0.6) level = 3; // 60%以上
+		else if (ratio >= 0.4) level = 2; // 40%以上
+		else level = 1;                   // それ以下
+		progress[levelField] = level;
 	}
 
 	progress.lastStudied = new Date();
