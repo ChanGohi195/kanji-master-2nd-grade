@@ -6,7 +6,7 @@
       {
         "id": "U+5F15-ex-1",
         "sentence": "ドアを 引く。",
-        "reading": "ひく",
+        "reading": "ひ.く",
         "type": "kun",
         "sentenceWithRuby": "ドアを 引く。",
         "sentenceHiragana": "どあを ひく。"
@@ -22,7 +22,7 @@
       {
         "id": "U+5F15-ex-3",
         "sentence": "つなを 引く。",
-        "reading": "ひく",
+        "reading": "ひ.く",
         "type": "kun",
         "sentenceWithRuby": "つなを 引く。",
         "sentenceHiragana": "つなを ひく。"
@@ -30,7 +30,7 @@
       {
         "id": "U+5F15-ex-4",
         "sentence": "いすを 引く。",
-        "reading": "ひく",
+        "reading": "ひ.く",
         "type": "kun",
         "sentenceWithRuby": "いすを 引く。",
         "sentenceHiragana": "いすを ひく。"
@@ -38,7 +38,7 @@
       {
         "id": "U+5F15-ex-5",
         "sentence": "せんを 引く。",
-        "reading": "ひく",
+        "reading": "ひ.く",
         "type": "kun",
         "sentenceWithRuby": "せんを 引く。",
         "sentenceHiragana": "せんを ひく。"
@@ -190,7 +190,7 @@
       {
         "id": "U+9060-ex-1",
         "sentence": "がっこうは 遠い。",
-        "reading": "とおい",
+        "reading": "とお.い",
         "type": "kun",
         "sentenceWithRuby": "がっこうは 遠い。",
         "sentenceHiragana": "がっこうは とおい。"
@@ -206,7 +206,7 @@
       {
         "id": "U+9060-ex-3",
         "sentence": "えきは 遠い。",
-        "reading": "とおい",
+        "reading": "とお.い",
         "type": "kun",
         "sentenceWithRuby": "えきは 遠い。",
         "sentenceHiragana": "えきは とおい。"
@@ -222,7 +222,7 @@
       {
         "id": "U+9060-ex-5",
         "sentence": "いえは ここから 遠い。",
-        "reading": "とおい",
+        "reading": "とお.い",
         "type": "kun",
         "sentenceWithRuby": "いえは ここから 遠い。",
         "sentenceHiragana": "いえは ここから とおい。"
@@ -561,7 +561,7 @@
       {
         "id": "U+4F1A-ex-1",
         "sentence": "ともだちに 会う。",
-        "reading": "あう",
+        "reading": "あ.う",
         "type": "kun",
         "sentenceWithRuby": "ともだちに 会う。",
         "sentenceHiragana": "ともだちに あう。"
@@ -577,7 +577,7 @@
       {
         "id": "U+4F1A-ex-3",
         "sentence": "おばあちゃんに 会う。",
-        "reading": "あう",
+        "reading": "あ.う",
         "type": "kun",
         "sentenceWithRuby": "おばあちゃんに 会う。",
         "sentenceHiragana": "おばあちゃんに あう。"
@@ -593,7 +593,7 @@
       {
         "id": "U+4F1A-ex-5",
         "sentence": "いぬに 会う。",
-        "reading": "あう",
+        "reading": "あ.う",
         "type": "kun",
         "sentenceWithRuby": "いぬに 会う。",
         "sentenceHiragana": "いぬに あう。"
@@ -1159,7 +1159,7 @@
       {
         "id": "U+5E30-ex-1",
         "sentence": "家に 帰る。",
-        "reading": "かえる",
+        "reading": "かえ.る",
         "type": "kun",
         "sentenceWithRuby": "家に 帰る。",
         "sentenceHiragana": "いえに かえる。"
@@ -1175,7 +1175,7 @@
       {
         "id": "U+5E30-ex-3",
         "sentence": "いえに 帰る。",
-        "reading": "かえる",
+        "reading": "かえ.る",
         "type": "kun",
         "sentenceWithRuby": "いえに 帰る。",
         "sentenceHiragana": "いえに かえる。"
@@ -1191,7 +1191,7 @@
       {
         "id": "U+5E30-ex-5",
         "sentence": "はやく 帰る。",
-        "reading": "かえる",
+        "reading": "かえ.る",
         "type": "kun",
         "sentenceWithRuby": "はやく 帰る。",
         "sentenceHiragana": "はやく かえる。"
@@ -1389,7 +1389,7 @@
       {
         "id": "U+5F37-ex-1",
         "sentence": "強い かぜ。",
-        "reading": "つよい",
+        "reading": "つよ.い",
         "type": "kun",
         "sentenceWithRuby": "強い かぜ。",
         "sentenceHiragana": "つよい かぜ。"
@@ -1405,7 +1405,7 @@
       {
         "id": "U+5F37-ex-3",
         "sentence": "強い ちから。",
-        "reading": "つよい",
+        "reading": "つよ.い",
         "type": "kun",
         "sentenceWithRuby": "強い ちから。",
         "sentenceHiragana": "つよいい ちから。"
@@ -1481,7 +1481,7 @@
       {
         "id": "U+8FD1-ex-1",
         "sentence": "えきに 近い。",
-        "reading": "ちかい",
+        "reading": "ちか.い",
         "type": "kun",
         "sentenceWithRuby": "えきに 近い。",
         "sentenceHiragana": "えきに ちかい。"
@@ -1497,7 +1497,7 @@
       {
         "id": "U+8FD1-ex-3",
         "sentence": "えきは 近い。",
-        "reading": "ちかい",
+        "reading": "ちか.い",
         "type": "kun",
         "sentenceWithRuby": "えきは 近い。",
         "sentenceHiragana": "えきは ちかいい。"
@@ -1711,7 +1711,7 @@
       {
         "id": "U+8A00-ex-1",
         "sentence": "ほんとうの ことを 言う。",
-        "reading": "いう",
+        "reading": "い.う",
         "type": "kun",
         "sentenceWithRuby": "ほんとうの ことを 言う。",
         "sentenceHiragana": "ほんとうの ことを いう。"
@@ -1727,7 +1727,7 @@
       {
         "id": "U+8A00-ex-3",
         "sentence": "ほんとうの ことを 言う。",
-        "reading": "いう",
+        "reading": "い.う",
         "type": "kun",
         "sentenceWithRuby": "ほんとうの ことを 言う。",
         "sentenceHiragana": "ほんとうの ことを いうう。"
@@ -1849,7 +1849,7 @@
       {
         "id": "U+53E4-ex-1",
         "sentence": "古い 本。",
-        "reading": "ふるい",
+        "reading": "ふる.い",
         "type": "kun",
         "sentenceWithRuby": "古い 本。",
         "sentenceHiragana": "ふるい ほん。"
@@ -1865,7 +1865,7 @@
       {
         "id": "U+53E4-ex-3",
         "sentence": "古い ほん。",
-        "reading": "ふるい",
+        "reading": "ふる.い",
         "type": "kun",
         "sentenceWithRuby": "古い ほん。",
         "sentenceHiragana": "ふるいい ほん。"
@@ -2125,7 +2125,7 @@
       {
         "id": "U+5E83-ex-1",
         "sentence": "広い へや。",
-        "reading": "ひろい",
+        "reading": "ひろ.い",
         "type": "kun",
         "sentenceWithRuby": "広い へや。",
         "sentenceHiragana": "ひろい へや。"
@@ -2141,7 +2141,7 @@
       {
         "id": "U+5E83-ex-3",
         "sentence": "広い にわ。",
-        "reading": "ひろい",
+        "reading": "ひろ.い",
         "type": "kun",
         "sentenceWithRuby": "広い にわ。",
         "sentenceHiragana": "ひろいい にわ。"
@@ -2225,7 +2225,7 @@
       {
         "id": "U+5149-ex-2",
         "sentence": "ほしが 光る。",
-        "reading": "ひかる",
+        "reading": "ひか.る",
         "type": "kun",
         "sentenceWithRuby": "ほしが 光る。",
         "sentenceHiragana": "ほしが ひかる。"
@@ -2355,7 +2355,7 @@
       {
         "id": "U+9AD8-ex-1",
         "sentence": "高い 山。",
-        "reading": "たかい",
+        "reading": "たか.い",
         "type": "kun",
         "sentenceWithRuby": "高い 山。",
         "sentenceHiragana": "たかい やま。"
@@ -2371,7 +2371,7 @@
       {
         "id": "U+9AD8-ex-3",
         "sentence": "高い やま。",
-        "reading": "たかい",
+        "reading": "たか.い",
         "type": "kun",
         "sentenceWithRuby": "高い やま。",
         "sentenceHiragana": "たかいい やま。"
@@ -2447,7 +2447,7 @@
       {
         "id": "U+5408-ex-1",
         "sentence": "こたえが 合う。",
-        "reading": "あう",
+        "reading": "あ.う",
         "type": "kun",
         "sentenceWithRuby": "こたえが 合う。",
         "sentenceHiragana": "こたえが あう。"
@@ -2463,7 +2463,7 @@
       {
         "id": "U+5408-ex-3",
         "sentence": "ちからを 合わせる。",
-        "reading": "あう",
+        "reading": "あ.う",
         "type": "kun",
         "sentenceWithRuby": "ちからを 合わせる。",
         "sentenceHiragana": "ちからを あうわせる。"
@@ -2723,7 +2723,7 @@
       {
         "id": "U+7D30-ex-1",
         "sentence": "細い みち。",
-        "reading": "ほそい",
+        "reading": "ほそ.い",
         "type": "kun",
         "sentenceWithRuby": "細い みち。",
         "sentenceHiragana": "ほそい みち。"
@@ -2739,7 +2739,7 @@
       {
         "id": "U+7D30-ex-3",
         "sentence": "細い いと。",
-        "reading": "ほそい",
+        "reading": "ほそ.い",
         "type": "kun",
         "sentenceWithRuby": "細い いと。",
         "sentenceHiragana": "ほそいい いと。"
@@ -2777,7 +2777,7 @@
       {
         "id": "U+4F5C-ex-2",
         "sentence": "おりがみを 作る。",
-        "reading": "つくる",
+        "reading": "つく.る",
         "type": "kun",
         "sentenceWithRuby": "おりがみを 作る。",
         "sentenceHiragana": "おりがみを つくる。"
@@ -3045,7 +3045,7 @@
       {
         "id": "U+601D-ex-1",
         "sentence": "なにを 思う？",
-        "reading": "おもう",
+        "reading": "おも.う",
         "type": "kun",
         "sentenceWithRuby": "なにを 思う？",
         "sentenceHiragana": "なにを おもう？"
@@ -3367,7 +3367,7 @@
       {
         "id": "U+5F31-ex-1",
         "sentence": "弱い チーム。",
-        "reading": "よわい",
+        "reading": "よわ.い",
         "type": "kun",
         "sentenceWithRuby": "弱い チーム。",
         "sentenceHiragana": "よわい ちーむ。"
@@ -3383,7 +3383,7 @@
       {
         "id": "U+5F31-ex-3",
         "sentence": "弱い こえ。",
-        "reading": "よわい",
+        "reading": "よわ.い",
         "type": "kun",
         "sentenceWithRuby": "弱い こえ。",
         "sentenceHiragana": "よわいい こえ。"
@@ -3597,7 +3597,7 @@
       {
         "id": "U+66F8-ex-1",
         "sentence": "字を 書く。",
-        "reading": "かく",
+        "reading": "か.く",
         "type": "kun",
         "sentenceWithRuby": "字を 書く。",
         "sentenceHiragana": "じを かく。"
@@ -3613,7 +3613,7 @@
       {
         "id": "U+66F8-ex-3",
         "sentence": "てがみを 書く。",
-        "reading": "かく",
+        "reading": "か.く",
         "type": "kun",
         "sentenceWithRuby": "てがみを 書く。",
         "sentenceHiragana": "てがみを かくく。"
@@ -3651,7 +3651,7 @@
       {
         "id": "U+5C11-ex-2",
         "sentence": "少ない かず。",
-        "reading": "すくない",
+        "reading": "すく.ない",
         "type": "kun",
         "sentenceWithRuby": "少ない かず。",
         "sentenceHiragana": "すくない かず。"
@@ -3659,7 +3659,7 @@
       {
         "id": "U+5C11-ex-3",
         "sentence": "人が 少ない。",
-        "reading": "すくない",
+        "reading": "すく.ない",
         "type": "kun",
         "sentenceWithRuby": "人が 少ない。",
         "sentenceHiragana": "人が すくないない。"
@@ -3781,7 +3781,7 @@
       {
         "id": "U+98DF-ex-1",
         "sentence": "ごはんを 食べる。",
-        "reading": "たべる",
+        "reading": "た.べる",
         "type": "kun",
         "sentenceWithRuby": "ごはんを 食べる。",
         "sentenceHiragana": "ごはんを たべる。"
@@ -3797,7 +3797,7 @@
       {
         "id": "U+98DF-ex-3",
         "sentence": "ごはんを 食べる。",
-        "reading": "たべる",
+        "reading": "た.べる",
         "type": "kun",
         "sentenceWithRuby": "ごはんを 食べる。",
         "sentenceHiragana": "ごはんを たべるべる。"
@@ -3873,7 +3873,7 @@
       {
         "id": "U+65B0-ex-1",
         "sentence": "新しい くつ。",
-        "reading": "あたらしい",
+        "reading": "あたら.しい",
         "type": "kun",
         "sentenceWithRuby": "新しい くつ。",
         "sentenceHiragana": "あたらしい くつ。"
@@ -3889,7 +3889,7 @@
       {
         "id": "U+65B0-ex-3",
         "sentence": "新しい ほん。",
-        "reading": "あたらしい",
+        "reading": "あたら.しい",
         "type": "kun",
         "sentenceWithRuby": "新しい ほん。",
         "sentenceHiragana": "あたらしいしい ほん。"
@@ -4241,7 +4241,7 @@
       {
         "id": "U+5207-ex-1",
         "sentence": "かみを 切る。",
-        "reading": "きる",
+        "reading": "き.る",
         "type": "kun",
         "sentenceWithRuby": "かみを 切る。",
         "sentenceHiragana": "かみを きる。"
@@ -4257,7 +4257,7 @@
       {
         "id": "U+5207-ex-3",
         "sentence": "かみを 切る。",
-        "reading": "きる",
+        "reading": "き.る",
         "type": "kun",
         "sentenceWithRuby": "かみを 切る。",
         "sentenceHiragana": "かみを きるる。"
@@ -4517,7 +4517,7 @@
       {
         "id": "U+8D70-ex-1",
         "sentence": "速く 走る。",
-        "reading": "はしる",
+        "reading": "はし.る",
         "type": "kun",
         "sentenceWithRuby": "速く 走る。",
         "sentenceHiragana": "はやく はしる。"
@@ -4525,7 +4525,7 @@
       {
         "id": "U+8D70-ex-2",
         "sentence": "くるまが 走る。",
-        "reading": "はしる",
+        "reading": "はし.る",
         "type": "kun",
         "sentenceWithRuby": "くるまが 走る。",
         "sentenceHiragana": "くるまが はしる。"
@@ -4533,7 +4533,7 @@
       {
         "id": "U+8D70-ex-3",
         "sentence": "はやく 走る。",
-        "reading": "はしる",
+        "reading": "はし.る",
         "type": "kun",
         "sentenceWithRuby": "はやく 走る。",
         "sentenceHiragana": "はやく はしるる。"
@@ -4563,7 +4563,7 @@
       {
         "id": "U+591A-ex-1",
         "sentence": "人が 多い。",
-        "reading": "おおい",
+        "reading": "おお.い",
         "type": "kun",
         "sentenceWithRuby": "人が 多い。",
         "sentenceHiragana": "ひとが おおい。"
@@ -4579,7 +4579,7 @@
       {
         "id": "U+591A-ex-3",
         "sentence": "人が 多い。",
-        "reading": "おおい",
+        "reading": "おお.い",
         "type": "kun",
         "sentenceWithRuby": "人が 多い。",
         "sentenceHiragana": "人が おおいい。"
@@ -4609,7 +4609,7 @@
       {
         "id": "U+592A-ex-1",
         "sentence": "太い えんぴつ。",
-        "reading": "ふとい",
+        "reading": "ふと.い",
         "type": "kun",
         "sentenceWithRuby": "太い えんぴつ。",
         "sentenceHiragana": "ふとい えんぴつ。"
@@ -4625,7 +4625,7 @@
       {
         "id": "U+592A-ex-3",
         "sentence": "太い えだ。",
-        "reading": "ふとい",
+        "reading": "ふと.い",
         "type": "kun",
         "sentenceWithRuby": "太い えだ。",
         "sentenceHiragana": "ふといい えだ。"
@@ -4977,7 +4977,7 @@
       {
         "id": "U+9577-ex-1",
         "sentence": "長い かみ。",
-        "reading": "ながい",
+        "reading": "なが.い",
         "type": "kun",
         "sentenceWithRuby": "長い かみ。",
         "sentenceHiragana": "ながい かみ。"
@@ -4993,7 +4993,7 @@
       {
         "id": "U+9577-ex-3",
         "sentence": "長い ながい でんわ。",
-        "reading": "ながい",
+        "reading": "なが.い",
         "type": "kun",
         "sentenceWithRuby": "長い ながい でんわ。",
         "sentenceHiragana": "ながいい ながい でんわ。"
