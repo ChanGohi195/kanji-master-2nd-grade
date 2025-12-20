@@ -177,6 +177,7 @@
 					<VerticalSentence
 						sentence={currentExample.example.sentence}
 						targetKanji={currentExample.kanji.character}
+						targetWord={currentExample.example.targetWord}
 					/>
 				</div>
 				<div class="flex-shrink-0 flex justify-center py-2">
