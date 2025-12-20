@@ -5759,42 +5759,44 @@
       {
         "id": "U+8AAD-ex-1",
         "sentence": "本を 読む。",
-        "reading": "よむ",
+        "reading": "よ.む",
         "type": "kun",
         "sentenceWithRuby": "本を 読む。",
         "sentenceHiragana": "ほんを よむ。"
       },
       {
         "id": "U+8AAD-ex-2",
-        "sentence": "音読する。",
-        "reading": "どく",
+        "sentence": "音読を する。",
+        "reading": "おんどく",
         "type": "on",
-        "sentenceWithRuby": "音読する。",
-        "sentenceHiragana": "おんどくする。"
+        "targetWord": "音読",
+        "sentenceWithRuby": "音読を する。",
+        "sentenceHiragana": "おんどくを する。"
       },
       {
         "id": "U+8AAD-ex-3",
-        "sentence": "ほんを 読む。",
-        "reading": "よむ",
-        "type": "kun",
-        "sentenceWithRuby": "ほんを 読む。",
-        "sentenceHiragana": "ほんを よむむ。"
-      },
-      {
-        "id": "U+8AAD-ex-4",
-        "sentence": "読しょの じかん。",
-        "reading": "どく",
+        "sentence": "読書の 時間。",
+        "reading": "どくしょ",
         "type": "on",
-        "sentenceWithRuby": "読しょの じかん。",
+        "targetWord": "読書",
+        "sentenceWithRuby": "読書の 時間。",
         "sentenceHiragana": "どくしょの じかん。"
       },
       {
-        "id": "U+8AAD-ex-5",
-        "sentence": "読み かたを ならう。",
-        "reading": "よ",
+        "id": "U+8AAD-ex-4",
+        "sentence": "読み方を 習う。",
+        "reading": "よ.む",
         "type": "kun",
-        "sentenceWithRuby": "読み かたを ならう。",
-        "sentenceHiragana": "よみ かたを ならう。"
+        "sentenceWithRuby": "読み方を 習う。",
+        "sentenceHiragana": "よみかたを ならう。"
+      },
+      {
+        "id": "U+8AAD-ex-5",
+        "sentence": "地図を 読む。",
+        "reading": "よ.む",
+        "type": "kun",
+        "sentenceWithRuby": "地図を 読む。",
+        "sentenceHiragana": "ちずを よむ。"
       }
     ]
   },
