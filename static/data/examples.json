@@ -7089,43 +7089,47 @@
     "examples": [
       {
         "id": "U+7528-ex-1",
-        "sentence": "用じが ある。",
-        "reading": "よう",
+        "sentence": "用事が ある。",
+        "reading": "ようじ",
         "type": "on",
-        "sentenceWithRuby": "用じが ある。",
+        "targetWord": "用事",
+        "sentenceWithRuby": "用事が ある。",
         "sentenceHiragana": "ようじが ある。"
       },
       {
         "id": "U+7528-ex-2",
-        "sentence": "し用 する。",
-        "reading": "よう",
+        "sentence": "えんぴつを 使用する。",
+        "reading": "しよう",
         "type": "on",
-        "sentenceWithRuby": "し用 する。",
-        "sentenceHiragana": "しよう する。"
+        "targetWord": "使用",
+        "sentenceWithRuby": "えんぴつを 使用する。",
+        "sentenceHiragana": "えんぴつを しようする。"
       },
       {
         "id": "U+7528-ex-3",
-        "sentence": "用いる。",
-        "reading": "よう",
+        "sentence": "あしたの 用意を する。",
+        "reading": "ようい",
         "type": "on",
-        "sentenceWithRuby": "用いる。",
-        "sentenceHiragana": "よういる。"
+        "targetWord": "用意",
+        "sentenceWithRuby": "あしたの 用意を する。",
+        "sentenceHiragana": "あしたの よういを する。"
       },
       {
         "id": "U+7528-ex-4",
-        "sentence": "用じを たす。",
-        "reading": "よう",
+        "sentence": "としょかんを 利用する。",
+        "reading": "りよう",
         "type": "on",
-        "sentenceWithRuby": "用じを たす。",
-        "sentenceHiragana": "ようじを たす。"
+        "targetWord": "利用",
+        "sentenceWithRuby": "としょかんを 利用する。",
+        "sentenceHiragana": "としょかんを りようする。"
       },
       {
         "id": "U+7528-ex-5",
-        "sentence": "用いて つくる。",
-        "reading": "もち",
+        "sentence": "はさみを 用いる。",
+        "reading": "もち.いる",
         "type": "kun",
-        "sentenceWithRuby": "用いて つくる。",
-        "sentenceHiragana": "もちいて つくる。"
+        "sentenceWithRuby": "はさみを 用いる。",
+        "sentenceHiragana": "はさみを もちいる。"
       }
     ]
   },
