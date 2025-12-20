@@ -5893,42 +5893,44 @@
     "examples": [
       {
         "id": "U+8089-ex-1",
-        "sentence": "肉を たべる。",
+        "sentence": "肉を 食べる。",
         "reading": "にく",
         "type": "on",
-        "sentenceWithRuby": "肉を たべる。",
+        "sentenceWithRuby": "肉を 食べる。",
         "sentenceHiragana": "にくを たべる。"
       },
       {
         "id": "U+8089-ex-2",
-        "sentence": "ぎゅう肉が すき。",
-        "reading": "にく",
+        "sentence": "牛肉を 焼く。",
+        "reading": "ぎゅうにく",
         "type": "on",
-        "sentenceWithRuby": "ぎゅう肉が すき。",
-        "sentenceHiragana": "ぎゅうにくが すき。"
+        "targetWord": "牛肉",
+        "sentenceWithRuby": "牛肉を 焼く。",
+        "sentenceHiragana": "ぎゅうにくを やく。"
       },
       {
         "id": "U+8089-ex-3",
-        "sentence": "肉を たべる。",
-        "reading": "にく",
-        "type": "kun",
-        "sentenceWithRuby": "肉を たべる。",
-        "sentenceHiragana": "にくを たべる。"
+        "sentence": "鳥肉を 買う。",
+        "reading": "とりにく",
+        "type": "on",
+        "targetWord": "鳥肉",
+        "sentenceWithRuby": "鳥肉を 買う。",
+        "sentenceHiragana": "とりにくを かう。"
       },
       {
         "id": "U+8089-ex-4",
-        "sentence": "肉しょくする。",
+        "sentence": "肉団子を 作る。",
         "reading": "にく",
         "type": "on",
-        "sentenceWithRuby": "肉しょくする。",
-        "sentenceHiragana": "にくしょくする。"
+        "sentenceWithRuby": "肉団子を 作る。",
+        "sentenceHiragana": "にくだんごを つくる。"
       },
       {
         "id": "U+8089-ex-5",
-        "sentence": "肉が やわらかい。",
+        "sentence": "肉が 柔らかい。",
         "reading": "にく",
-        "type": "kun",
-        "sentenceWithRuby": "肉が やわらかい。",
+        "type": "on",
+        "sentenceWithRuby": "肉が 柔らかい。",
         "sentenceHiragana": "にくが やわらかい。"
       }
     ]
