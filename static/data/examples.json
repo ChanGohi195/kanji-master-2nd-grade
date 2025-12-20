@@ -5481,7 +5481,7 @@
       {
         "id": "U+5F53-ex-1",
         "sentence": "くじに 当たる。",
-        "reading": "あたる",
+        "reading": "あ.たる",
         "type": "kun",
         "sentenceWithRuby": "くじに 当たる。",
         "sentenceHiragana": "くじに あたる。"
@@ -5491,32 +5491,35 @@
         "sentence": "本当だよ。",
         "reading": "とう",
         "type": "on",
+        "targetWord": "本当",
         "sentenceWithRuby": "本当だよ。",
         "sentenceHiragana": "ほんとうだよ。"
       },
       {
         "id": "U+5F53-ex-3",
-        "sentence": "くじが 当たる。",
-        "reading": "あたる",
-        "type": "kun",
-        "sentenceWithRuby": "くじが 当たる。",
-        "sentenceHiragana": "くじが あたるたる。"
+        "sentence": "当日に 行く。",
+        "reading": "とう",
+        "type": "on",
+        "targetWord": "当日",
+        "sentenceWithRuby": "当日に 行く。",
+        "sentenceHiragana": "とうじつに いく。"
       },
       {
         "id": "U+5F53-ex-4",
         "sentence": "当ばんする。",
         "reading": "とう",
         "type": "on",
+        "targetWord": "当番",
         "sentenceWithRuby": "当ばんする。",
         "sentenceHiragana": "とうばんする。"
       },
       {
         "id": "U+5F53-ex-5",
-        "sentence": "当たり まえ。",
-        "reading": "あ",
+        "sentence": "当たりまえ。",
+        "reading": "あ.たり",
         "type": "kun",
-        "sentenceWithRuby": "当たり まえ。",
-        "sentenceHiragana": "あたり まえ。"
+        "sentenceWithRuby": "当たりまえ。",
+        "sentenceHiragana": "あたりまえ。"
       }
     ]
   },
