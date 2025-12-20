@@ -6353,43 +6353,45 @@
     "examples": [
       {
         "id": "U+805E-ex-1",
-        "sentence": "おとを 聞く。",
-        "reading": "きく",
+        "sentence": "話を 聞く。",
+        "reading": "き.く",
         "type": "kun",
-        "sentenceWithRuby": "おとを 聞く。",
-        "sentenceHiragana": "おとを きく。"
+        "sentenceWithRuby": "話を 聞く。",
+        "sentenceHiragana": "はなしを きく。"
       },
       {
         "id": "U+805E-ex-2",
-        "sentence": "新聞を よむ。",
-        "reading": "ぶん",
+        "sentence": "新聞を 読む。",
+        "reading": "しんぶん",
         "type": "on",
-        "sentenceWithRuby": "新聞を よむ。",
+        "targetWord": "新聞",
+        "sentenceWithRuby": "新聞を 読む。",
         "sentenceHiragana": "しんぶんを よむ。"
       },
       {
         "id": "U+805E-ex-3",
-        "sentence": "おとを 聞く。",
-        "reading": "きく",
+        "sentence": "音が 聞こえる。",
+        "reading": "き.こえる",
         "type": "kun",
-        "sentenceWithRuby": "おとを 聞く。",
-        "sentenceHiragana": "おとを きくく。"
+        "sentenceWithRuby": "音が 聞こえる。",
+        "sentenceHiragana": "おとが きこえる。"
       },
       {
         "id": "U+805E-ex-4",
-        "sentence": "新聞を よむ。",
-        "reading": "ぶん",
+        "sentence": "見聞を 広げる。",
+        "reading": "けんぶん",
         "type": "on",
-        "sentenceWithRuby": "新[しん]聞を よむ。",
-        "sentenceHiragana": "しんぶんを よむ。"
+        "targetWord": "見聞",
+        "sentenceWithRuby": "見聞を 広げる。",
+        "sentenceHiragana": "けんぶんを ひろげる。"
       },
       {
         "id": "U+805E-ex-5",
-        "sentence": "聞いて みる。",
-        "reading": "き",
+        "sentence": "道を 聞く。",
+        "reading": "き.く",
         "type": "kun",
-        "sentenceWithRuby": "聞いて みる。",
-        "sentenceHiragana": "きいて みる。"
+        "sentenceWithRuby": "道を 聞く。",
+        "sentenceHiragana": "みちを きく。"
       }
     ]
   },
