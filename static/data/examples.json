@@ -6629,43 +6629,48 @@
     "examples": [
       {
         "id": "U+6BCE-ex-1",
-        "sentence": "毎日 がっこうに いく。",
-        "reading": "まい",
+        "sentence": "毎日 学校に 行く。",
+        "reading": "まいにち",
         "type": "on",
-        "sentenceWithRuby": "毎日 がっこうに いく。",
+        "targetWord": "毎日",
+        "sentenceWithRuby": "毎日 学校に 行く。",
         "sentenceHiragana": "まいにち がっこうに いく。"
       },
       {
         "id": "U+6BCE-ex-2",
-        "sentence": "毎朝 おきる。",
-        "reading": "まい",
+        "sentence": "毎朝 早く 起きる。",
+        "reading": "まいあさ",
         "type": "on",
-        "sentenceWithRuby": "毎朝 おきる。",
-        "sentenceHiragana": "まいあさ おきる。"
+        "targetWord": "毎朝",
+        "sentenceWithRuby": "毎朝 早く 起きる。",
+        "sentenceHiragana": "まいあさ はやく おきる。"
       },
       {
         "id": "U+6BCE-ex-3",
-        "sentence": "毎日 がっこうに いく。",
-        "reading": "まい",
+        "sentence": "毎週 水泳に 行く。",
+        "reading": "まいしゅう",
         "type": "on",
-        "sentenceWithRuby": "毎日 がっこうに いく。",
-        "sentenceHiragana": "まいにち がっこうに いく。"
+        "targetWord": "毎週",
+        "sentenceWithRuby": "毎週 水泳に 行く。",
+        "sentenceHiragana": "まいしゅう すいえいに いく。"
       },
       {
         "id": "U+6BCE-ex-4",
-        "sentence": "毎しゅう はしる。",
-        "reading": "まい",
-        "type": "on",
-        "sentenceWithRuby": "毎しゅう はしる。",
-        "sentenceHiragana": "まいしゅう はしる。"
+        "sentence": "日毎に 暖かくなる。",
+        "reading": "ひごと",
+        "type": "kun",
+        "targetWord": "日毎",
+        "sentenceWithRuby": "日毎に 暖かくなる。",
+        "sentenceHiragana": "ひごとに あたたかくなる。"
       },
       {
         "id": "U+6BCE-ex-5",
-        "sentence": "毎あさ はを みがく。",
-        "reading": "まい",
-        "type": "on",
-        "sentenceWithRuby": "毎あさ はを みがく。",
-        "sentenceHiragana": "まいあさ はを みがく。"
+        "sentence": "年毎に 大きくなる。",
+        "reading": "としごと",
+        "type": "kun",
+        "targetWord": "年毎",
+        "sentenceWithRuby": "年毎に 大きくなる。",
+        "sentenceHiragana": "としごとに おおきくなる。"
       }
     ]
   },

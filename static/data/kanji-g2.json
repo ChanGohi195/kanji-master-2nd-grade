@@ -143,7 +143,7 @@
   {"id": "U+6BCD", "character": "母", "grade": 2, "strokeCount": 5, "readings": {"on": ["ボ"], "kun": ["はは"]}, "meanings": ["mother"]},
   {"id": "U+65B9", "character": "方", "grade": 2, "strokeCount": 4, "readings": {"on": ["ホウ"], "kun": ["かた"]}, "meanings": ["direction", "way"]},
   {"id": "U+5317", "character": "北", "grade": 2, "strokeCount": 5, "readings": {"on": ["ホク"], "kun": ["きた"]}, "meanings": ["north"]},
-  {"id": "U+6BCE", "character": "毎", "grade": 2, "strokeCount": 6, "readings": {"on": ["マイ"], "kun": []}, "meanings": ["every"]},
+  {"id": "U+6BCE", "character": "毎", "grade": 2, "strokeCount": 6, "readings": {"on": ["マイ"], "kun": ["ごと"]}, "meanings": ["every"]},
   {"id": "U+59B9", "character": "妹", "grade": 2, "strokeCount": 8, "readings": {"on": ["マイ"], "kun": ["いもうと"]}, "meanings": ["younger sister"]},
   {"id": "U+4E07", "character": "万", "grade": 2, "strokeCount": 3, "readings": {"on": ["マン", "バン"], "kun": []}, "meanings": ["ten thousand"]},
   {"id": "U+660E", "character": "明", "grade": 2, "strokeCount": 8, "readings": {"on": ["メイ", "ミョウ"], "kun": ["あかり", "あかるい", "あける", "あく", "あきらか"]}, "meanings": ["bright", "clear"]},
