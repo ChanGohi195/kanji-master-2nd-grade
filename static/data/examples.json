@@ -5344,43 +5344,48 @@
     "examples": [
       {
         "id": "U+96FB-ex-1",
-        "sentence": "電車に のる。",
-        "reading": "でん",
+        "sentence": "電車で 学校に 行く。",
+        "reading": "でんしゃ",
         "type": "on",
-        "sentenceWithRuby": "電車に のる。",
-        "sentenceHiragana": "でんしゃに のる。"
+        "targetWord": "電車",
+        "sentenceWithRuby": "電車[でんしゃ]で 学校[がっこう]に 行[い]く。",
+        "sentenceHiragana": "でんしゃで がっこうに いく。"
       },
       {
         "id": "U+96FB-ex-2",
-        "sentence": "電気を つける。",
-        "reading": "でん",
+        "sentence": "部屋の 電気を つける。",
+        "reading": "でんき",
         "type": "on",
-        "sentenceWithRuby": "電気を つける。",
-        "sentenceHiragana": "でんきを つける。"
+        "targetWord": "電気",
+        "sentenceWithRuby": "部屋[へや]の 電気[でんき]を つける。",
+        "sentenceHiragana": "へやの でんきを つける。"
       },
       {
         "id": "U+96FB-ex-3",
-        "sentence": "電車に のる。",
-        "reading": "でん",
+        "sentence": "友達に 電話する。",
+        "reading": "でんわ",
         "type": "on",
-        "sentenceWithRuby": "電車に のる。",
-        "sentenceHiragana": "でん車に のる。"
+        "targetWord": "電話",
+        "sentenceWithRuby": "友達[ともだち]に 電話[でんわ]する。",
+        "sentenceHiragana": "ともだちに でんわする。"
       },
       {
         "id": "U+96FB-ex-4",
-        "sentence": "電気を つける。",
-        "reading": "でん",
+        "sentence": "電池を 交換する。",
+        "reading": "でんち",
         "type": "on",
-        "sentenceWithRuby": "電気を つける。",
-        "sentenceHiragana": "でん気を つける。"
+        "targetWord": "電池",
+        "sentenceWithRuby": "電池[でんち]を 交換[こうかん]する。",
+        "sentenceHiragana": "でんちを こうかんする。"
       },
       {
         "id": "U+96FB-ex-5",
-        "sentence": "電話を かける。",
-        "reading": "でん",
+        "sentence": "雷で 停電した。",
+        "reading": "ていでん",
         "type": "on",
-        "sentenceWithRuby": "電話を かける。",
-        "sentenceHiragana": "でん話を かける。"
+        "targetWord": "停電",
+        "sentenceWithRuby": "雷[かみなり]で 停電[ていでん]した。",
+        "sentenceHiragana": "かみなりで ていでんした。"
       }
     ]
   },
