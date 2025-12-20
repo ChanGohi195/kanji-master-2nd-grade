@@ -6453,12 +6453,11 @@
       },
       {
         "id": "U+6B69-ex-2",
-        "sentence": "さん歩に 出かける。",
-        "reading": "さんぽ",
-        "type": "on",
-        "targetWord": "さん歩",
-        "sentenceWithRuby": "さん歩に 出かける。",
-        "sentenceHiragana": "さんぽに でかける。"
+        "sentence": "歩みを とめる。",
+        "reading": "あゆ.み",
+        "type": "kun",
+        "sentenceWithRuby": "歩みを とめる。",
+        "sentenceHiragana": "あゆみを とめる。"
       },
       {
         "id": "U+6B69-ex-3",
