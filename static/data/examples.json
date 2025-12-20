@@ -243,35 +243,38 @@
       },
       {
         "id": "U+4F55-ex-2",
-        "sentence": "何を たべる？",
+        "sentence": "何を 食べる？",
         "reading": "なに",
         "type": "kun",
-        "sentenceWithRuby": "何を たべる？",
+        "sentenceWithRuby": "何を 食べる？",
         "sentenceHiragana": "なにを たべる？"
       },
       {
         "id": "U+4F55-ex-3",
-        "sentence": "何が すき？",
-        "reading": "なに",
+        "sentence": "何時に 会う？",
+        "reading": "なんじ",
         "type": "kun",
-        "sentenceWithRuby": "何が すき？",
-        "sentenceHiragana": "なにが すき？"
+        "targetWord": "何時",
+        "sentenceWithRuby": "何時に 会う？",
+        "sentenceHiragana": "なんじに あう？"
       },
       {
         "id": "U+4F55-ex-4",
-        "sentence": "何ようびですか。",
-        "reading": "なん",
+        "sentence": "何人 いますか。",
+        "reading": "なんにん",
         "type": "kun",
-        "sentenceWithRuby": "何ようびですか。",
-        "sentenceHiragana": "なんようびですか。"
+        "targetWord": "何人",
+        "sentenceWithRuby": "何人 いますか。",
+        "sentenceHiragana": "なんにん いますか。"
       },
       {
         "id": "U+4F55-ex-5",
-        "sentence": "何を かいたの？",
-        "reading": "なに",
+        "sentence": "何度も やる。",
+        "reading": "なんど",
         "type": "kun",
-        "sentenceWithRuby": "何を かいたの？",
-        "sentenceHiragana": "なにを かいたの？"
+        "targetWord": "何度",
+        "sentenceWithRuby": "何度も やる。",
+        "sentenceHiragana": "なんども やる。"
       }
     ]
   },
