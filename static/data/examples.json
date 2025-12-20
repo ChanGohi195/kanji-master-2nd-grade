@@ -5947,35 +5947,38 @@
       },
       {
         "id": "U+99AC-ex-2",
+        "sentence": "馬車に のる。",
+        "reading": "ばしゃ",
+        "type": "on",
+        "targetWord": "馬車",
+        "sentenceWithRuby": "馬車に のる。",
+        "sentenceHiragana": "ばしゃに のる。"
+      },
+      {
+        "id": "U+99AC-ex-3",
+        "sentence": "竹馬で あそぶ。",
+        "reading": "たけうま",
+        "type": "kun",
+        "targetWord": "竹馬",
+        "sentenceWithRuby": "竹馬で あそぶ。",
+        "sentenceHiragana": "たけうまで あそぶ。"
+      },
+      {
+        "id": "U+99AC-ex-4",
+        "sentence": "木馬に のる。",
+        "reading": "もくば",
+        "type": "on",
+        "targetWord": "木馬",
+        "sentenceWithRuby": "木馬に のる。",
+        "sentenceHiragana": "もくばに のる。"
+      },
+      {
+        "id": "U+99AC-ex-5",
         "sentence": "白い 馬。",
         "reading": "うま",
         "type": "kun",
         "sentenceWithRuby": "白い 馬。",
         "sentenceHiragana": "しろい うま。"
-      },
-      {
-        "id": "U+99AC-ex-3",
-        "sentence": "馬に のる。",
-        "reading": "うま",
-        "type": "kun",
-        "sentenceWithRuby": "馬に のる。",
-        "sentenceHiragana": "うまに のる。"
-      },
-      {
-        "id": "U+99AC-ex-4",
-        "sentence": "馬車に のる。",
-        "reading": "ば",
-        "type": "on",
-        "sentenceWithRuby": "馬車に のる。",
-        "sentenceHiragana": "ば車に のる。"
-      },
-      {
-        "id": "U+99AC-ex-5",
-        "sentence": "はやい 馬。",
-        "reading": "うま",
-        "type": "kun",
-        "sentenceWithRuby": "はやい 馬。",
-        "sentenceHiragana": "はやい うま。"
       }
     ]
   },
