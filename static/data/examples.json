@@ -5901,33 +5901,33 @@
       },
       {
         "id": "U+8089-ex-2",
-        "sentence": "ぎゅう肉が すき。",
+        "sentence": "ぎゅう肉を やく。",
         "reading": "にく",
         "type": "on",
-        "sentenceWithRuby": "ぎゅう肉が すき。",
-        "sentenceHiragana": "ぎゅうにくが すき。"
+        "sentenceWithRuby": "ぎゅう肉を やく。",
+        "sentenceHiragana": "ぎゅうにくを やく。"
       },
       {
         "id": "U+8089-ex-3",
-        "sentence": "肉を たべる。",
+        "sentence": "とり肉を かう。",
         "reading": "にく",
-        "type": "kun",
-        "sentenceWithRuby": "肉を たべる。",
-        "sentenceHiragana": "にくを たべる。"
+        "type": "on",
+        "sentenceWithRuby": "とり肉を かう。",
+        "sentenceHiragana": "とりにくを かう。"
       },
       {
         "id": "U+8089-ex-4",
-        "sentence": "肉しょくする。",
+        "sentence": "肉だんごを 作る。",
         "reading": "にく",
         "type": "on",
-        "sentenceWithRuby": "肉しょくする。",
-        "sentenceHiragana": "にくしょくする。"
+        "sentenceWithRuby": "肉だんごを 作る。",
+        "sentenceHiragana": "にくだんごを つくる。"
       },
       {
         "id": "U+8089-ex-5",
         "sentence": "肉が やわらかい。",
         "reading": "にく",
-        "type": "kun",
+        "type": "on",
         "sentenceWithRuby": "肉が やわらかい。",
         "sentenceHiragana": "にくが やわらかい。"
       }
