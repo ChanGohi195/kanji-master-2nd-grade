@@ -6721,43 +6721,48 @@
     "examples": [
       {
         "id": "U+4E07-ex-1",
-        "sentence": "一万円を もらう。",
-        "reading": "まん",
+        "sentence": "一万円を もらった。",
+        "reading": "いちまん",
         "type": "on",
-        "sentenceWithRuby": "一万円を もらう。",
-        "sentenceHiragana": "いちまんえんを もらう。"
+        "targetWord": "一万",
+        "sentenceWithRuby": "一万円を もらった。",
+        "sentenceHiragana": "いちまんえんを もらった。"
       },
       {
         "id": "U+4E07-ex-2",
         "sentence": "万が一に そなえる。",
-        "reading": "まん",
+        "reading": "まんがいち",
         "type": "on",
+        "targetWord": "万が一",
         "sentenceWithRuby": "万が一に そなえる。",
         "sentenceHiragana": "まんがいちに そなえる。"
       },
       {
         "id": "U+4E07-ex-3",
-        "sentence": "一万えん。",
-        "reading": "まん",
+        "sentence": "十万円の 自転車が ほしい。",
+        "reading": "じゅうまん",
         "type": "on",
-        "sentenceWithRuby": "一[いち]万えん。",
-        "sentenceHiragana": "いちまんえん。"
+        "targetWord": "十万",
+        "sentenceWithRuby": "十万円の 自転車が ほしい。",
+        "sentenceHiragana": "じゅうまんえんの じてんしゃが ほしい。"
       },
       {
         "id": "U+4E07-ex-4",
-        "sentence": "万年ひつを つかう。",
-        "reading": "まん",
+        "sentence": "万年筆で 名前を 書く。",
+        "reading": "まんねん",
         "type": "on",
-        "sentenceWithRuby": "万年ひつを つかう。",
-        "sentenceHiragana": "まんねんひつを つかう。"
+        "targetWord": "万年",
+        "sentenceWithRuby": "万年筆で 名前を 書く。",
+        "sentenceHiragana": "まんねんひつで なまえを かく。"
       },
       {
         "id": "U+4E07-ex-5",
-        "sentence": "百万の ほし。",
-        "reading": "まん",
+        "sentence": "空に 百万の 星が かがやく。",
+        "reading": "ひゃくまん",
         "type": "on",
-        "sentenceWithRuby": "百[ひゃく]万の ほし。",
-        "sentenceHiragana": "ひゃくまんの ほし。"
+        "targetWord": "百万",
+        "sentenceWithRuby": "空に 百万の 星が かがやく。",
+        "sentenceHiragana": "そらに ひゃくまんの ほしが かがやく。"
       }
     ]
   },
