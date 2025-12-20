@@ -211,7 +211,7 @@
 						{:else}
 							<div class="text-5xl mb-1">❌</div>
 							<div class="text-xl font-bold text-red-600">
-								こたえは「{currentExample.example.reading}」
+								こたえは「{currentExample.example.reading.replace('.', '')}」
 							</div>
 						{/if}
 					</div>
