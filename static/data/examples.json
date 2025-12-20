@@ -5665,7 +5665,7 @@
       {
         "id": "U+540C-ex-1",
         "sentence": "同じ いろ。",
-        "reading": "おなじ",
+        "reading": "おな.じ",
         "type": "kun",
         "sentenceWithRuby": "同じ いろ。",
         "sentenceHiragana": "おなじ いろ。"
@@ -5680,11 +5680,11 @@
       },
       {
         "id": "U+540C-ex-3",
-        "sentence": "同じ いろ。",
-        "reading": "おなじ",
+        "sentence": "同じ 大きさ。",
+        "reading": "おな.じ",
         "type": "kun",
-        "sentenceWithRuby": "同じ いろ。",
-        "sentenceHiragana": "おなじじ いろ。"
+        "sentenceWithRuby": "同じ 大きさ。",
+        "sentenceHiragana": "おなじ おおきさ。"
       },
       {
         "id": "U+540C-ex-4",
@@ -5697,7 +5697,7 @@
       {
         "id": "U+540C-ex-5",
         "sentence": "同じく する。",
-        "reading": "おな",
+        "reading": "おな.じ",
         "type": "kun",
         "sentenceWithRuby": "同じく する。",
         "sentenceHiragana": "おなじく する。"
