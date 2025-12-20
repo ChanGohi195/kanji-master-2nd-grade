@@ -5388,43 +5388,46 @@
     "examples": [
       {
         "id": "U+5200-ex-1",
-        "sentence": "刀を ふる。",
+        "sentence": "はくぶつかんで 刀を 見た。",
         "reading": "かたな",
         "type": "kun",
-        "sentenceWithRuby": "刀を ふる。",
-        "sentenceHiragana": "かたなを ふる。"
+        "sentenceWithRuby": "はくぶつかんで 刀を 見[み]た。",
+        "sentenceHiragana": "はくぶつかんで かたなを みた。"
       },
       {
         "id": "U+5200-ex-2",
-        "sentence": "日本刀は かっこいい。",
+        "sentence": "日本刀は 美しい。",
         "reading": "とう",
         "type": "on",
-        "sentenceWithRuby": "日本刀は かっこいい。",
-        "sentenceHiragana": "にほんとうは かっこいい。"
+        "targetWord": "日本刀",
+        "sentenceWithRuby": "日本刀は 美[うつく]しい。",
+        "sentenceHiragana": "にほんとうは うつくしい。"
       },
       {
         "id": "U+5200-ex-3",
-        "sentence": "刀を みる。",
+        "sentence": "むかしの 刀を しらべる。",
         "reading": "かたな",
         "type": "kun",
-        "sentenceWithRuby": "刀を みる。",
-        "sentenceHiragana": "かたなを みる。"
+        "sentenceWithRuby": "むかしの 刀を しらべる。",
+        "sentenceHiragana": "むかしの かたなを しらべる。"
       },
       {
         "id": "U+5200-ex-4",
-        "sentence": "木刀で あそぶ。",
-        "reading": "とう",
+        "sentence": "けんどうで 木刀を つかう。",
+        "reading": "ぼくとう",
         "type": "on",
-        "sentenceWithRuby": "木[き]刀で あそぶ。",
-        "sentenceHiragana": "きとうで あそぶ。"
+        "targetWord": "木刀",
+        "sentenceWithRuby": "けんどうで 木刀を つかう。",
+        "sentenceHiragana": "けんどうで ぼくとうを つかう。"
       },
       {
         "id": "U+5200-ex-5",
-        "sentence": "つよい 刀。",
-        "reading": "かたな",
-        "type": "kun",
-        "sentenceWithRuby": "つよい 刀。",
-        "sentenceHiragana": "つよい かたな。"
+        "sentence": "名刀を かざる。",
+        "reading": "とう",
+        "type": "on",
+        "targetWord": "名刀",
+        "sentenceWithRuby": "名刀を かざる。",
+        "sentenceHiragana": "めいとうを かざる。"
       }
     ]
   },
