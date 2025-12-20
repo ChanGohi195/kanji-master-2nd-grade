@@ -5515,11 +5515,11 @@
       },
       {
         "id": "U+5F53-ex-5",
-        "sentence": "当たりまえ。",
+        "sentence": "それは 当たりまえの ことだ。",
         "reading": "あ.たり",
         "type": "kun",
-        "sentenceWithRuby": "当たりまえ。",
-        "sentenceHiragana": "あたりまえ。"
+        "sentenceWithRuby": "それは 当たりまえの ことだ。",
+        "sentenceHiragana": "それは あたりまえの ことだ。"
       }
     ]
   },
@@ -5657,12 +5657,12 @@
       },
       {
         "id": "U+982D-ex-5",
-        "sentence": "頭上に ある。",
+        "sentence": "頭上に 星が 光る。",
         "reading": "ずじょう",
         "type": "on",
         "targetWord": "頭上",
-        "sentenceWithRuby": "頭上に ある。",
-        "sentenceHiragana": "ずじょうに ある。"
+        "sentenceWithRuby": "頭上に 星が 光る。",
+        "sentenceHiragana": "ずじょうに ほしが ひかる。"
       }
     ]
   },
