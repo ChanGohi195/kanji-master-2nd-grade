@@ -5342,43 +5342,48 @@
     "examples": [
       {
         "id": "U+96FB-ex-1",
-        "sentence": "電車に のる。",
-        "reading": "でん",
+        "sentence": "電車で 学校に 行く。",
+        "reading": "でんしゃ",
         "type": "on",
-        "sentenceWithRuby": "電車に のる。",
-        "sentenceHiragana": "でんしゃに のる。"
+        "targetWord": "電車",
+        "sentenceWithRuby": "電車で 学校に 行く。",
+        "sentenceHiragana": "でんしゃで がっこうに いく。"
       },
       {
         "id": "U+96FB-ex-2",
-        "sentence": "電気を つける。",
-        "reading": "でん",
+        "sentence": "へやの 電気を つける。",
+        "reading": "でんき",
         "type": "on",
-        "sentenceWithRuby": "電気を つける。",
-        "sentenceHiragana": "でんきを つける。"
+        "targetWord": "電気",
+        "sentenceWithRuby": "へやの 電気を つける。",
+        "sentenceHiragana": "へやの でんきを つける。"
       },
       {
         "id": "U+96FB-ex-3",
-        "sentence": "電車に のる。",
-        "reading": "でん",
+        "sentence": "ともだちに 電話する。",
+        "reading": "でんわ",
         "type": "on",
-        "sentenceWithRuby": "電車に のる。",
-        "sentenceHiragana": "でん車に のる。"
+        "targetWord": "電話",
+        "sentenceWithRuby": "ともだちに 電話する。",
+        "sentenceHiragana": "ともだちに でんわする。"
       },
       {
         "id": "U+96FB-ex-4",
-        "sentence": "電気を つける。",
-        "reading": "でん",
+        "sentence": "電池を こうかんする。",
+        "reading": "でんち",
         "type": "on",
-        "sentenceWithRuby": "電気を つける。",
-        "sentenceHiragana": "でん気を つける。"
+        "targetWord": "電池",
+        "sentenceWithRuby": "電池を こうかんする。",
+        "sentenceHiragana": "でんちを こうかんする。"
       },
       {
         "id": "U+96FB-ex-5",
-        "sentence": "電話を かける。",
+        "sentence": "かみなりで ていでんした。",
         "reading": "でん",
         "type": "on",
-        "sentenceWithRuby": "電話を かける。",
-        "sentenceHiragana": "でん話を かける。"
+        "targetWord": "停電",
+        "sentenceWithRuby": "かみなりで ていでんした。",
+        "sentenceHiragana": "かみなりで ていでんした。"
       }
     ]
   },
