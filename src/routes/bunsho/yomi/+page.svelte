@@ -1,11 +1,45 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import { page } from '$app/stores';
 	import { UI } from '$lib/data/ui-text';
 	import { recordStudy, recordBunshoStudy } from '$lib/db';
 	import { playCorrectSound, playIncorrectSound } from '$lib/services/sound';
 	import VerticalSentence from '$lib/components/VerticalSentence.svelte';
 	import SpeakButton from '$lib/components/SpeakButton.svelte';
+
+	// アクティブ時間追跡（10秒以上操作がなければカウント停止）
+	const INACTIVE_THRESHOLD = 10000;
+	let lastActivity = $state(Date.now());
+	let activeTime = $state(0);
+	let activityInterval: ReturnType<typeof setInterval> | null = null;
+
+	function handleActivity() {
+		lastActivity = Date.now();
+	}
+
+	function startActivityTracking() {
+		lastActivity = Date.now();
+		activeTime = 0;
+		if (activityInterval) clearInterval(activityInterval);
+		activityInterval = setInterval(() => {
+			const now = Date.now();
+			if (now - lastActivity < INACTIVE_THRESHOLD) {
+				activeTime += 1000;
+			}
+		}, 1000);
+	}
+
+	function stopActivityTracking(): number {
+		if (activityInterval) {
+			clearInterval(activityInterval);
+			activityInterval = null;
+		}
+		return activeTime;
+	}
+
+	onDestroy(() => {
+		if (activityInterval) clearInterval(activityInterval);
+	});
 
 	// 読みから送り仮名を除去（文章モードでは送り仮名がヒントになるため）
 	function getStemReading(reading: string): string {
@@ -35,7 +69,6 @@
 	let selectedAnswer: string | null = $state(null);
 	let showResult = $state(false);
 	let isCorrect = $state(false);
-	let startTime = $state(0);
 
 	let questionList: { kanji: KanjiExample; example: Example }[] = $state([]);
 	let targetKanjiChar: string | null = $state(null);
@@ -78,7 +111,7 @@
 		selectedAnswer = null;
 		showResult = false;
 		isCorrect = false;
-		startTime = Date.now();
+		startActivityTracking();
 	}
 
 	function generateChoices() {
@@ -111,13 +144,15 @@
 		isCorrect = answer === currentExample.example.reading;
 		showResult = true;
 
+		const timeSpent = stopActivityTracking();
+
 		await recordStudy({
 			kanjiId: currentExample.kanji.kanjiId,
 			mode: 'reading',
 			result: isCorrect ? 'correct' : 'incorrect',
 			score: isCorrect ? 1 : 0,
 			hintUsed: false,
-			timeSpent: Date.now() - startTime
+			timeSpent
 		});
 
 		// ぶんしょうモード進捗を記録（例文総数を渡す）
@@ -156,7 +191,13 @@
 	<title>ぶんしょう よみ{targetKanjiChar ? ' - ' + targetKanjiChar : ''} - {UI.appName}</title>
 </svelte:head>
 
-<div class="h-screen flex flex-col bg-gradient-to-br from-green-50 to-emerald-100">
+<div
+	class="h-screen flex flex-col bg-gradient-to-br from-green-50 to-emerald-100"
+	onmousemove={handleActivity}
+	onclick={handleActivity}
+	ontouchstart={handleActivity}
+	onkeydown={handleActivity}
+>
 	<header class="bg-white shadow-md flex-shrink-0">
 		<div class="flex items-center justify-between px-4 py-2">
 			<a href={targetKanjiChar ? '/zukan/' + (currentExample?.kanji.kanjiId || '') : '/bunsho'} class="text-lg text-green-500 hover:text-green-700">← もどる</a>
