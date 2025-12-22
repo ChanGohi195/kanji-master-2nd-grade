@@ -281,3 +281,30 @@ export async function clearAllData() {
 	await db.studyRecords.clear();
 	await db.kanjiProgress.clear();
 }
+
+// 総学習時間を取得（ミリ秒）
+export async function getTotalStudyTime(): Promise<number> {
+	const records = await db.studyRecords.toArray();
+	return records.reduce((sum, r) => sum + (r.timeSpent || 0), 0);
+}
+
+// 総問題数を取得
+export async function getTotalQuestionCount(): Promise<number> {
+	return db.studyRecords.count();
+}
+
+// 今日の学習統計を取得
+export async function getTodayStats(): Promise<{ time: number; count: number }> {
+	const today = new Date();
+	today.setHours(0, 0, 0, 0);
+
+	const records = await db.studyRecords
+		.where('timestamp')
+		.aboveOrEqual(today)
+		.toArray();
+
+	return {
+		time: records.reduce((sum, r) => sum + (r.timeSpent || 0), 0),
+		count: records.length
+	};
+}

@@ -2,21 +2,28 @@
 	import { onMount } from 'svelte';
 	import { UI } from '$lib/data/ui-text';
 	import { settings } from '$lib/stores/settings';
-	import { getAllProgress, getDailyStats, getGrowthCounts, type KanjiProgress } from '$lib/db';
+	import { getAllProgress, getDailyStats, getGrowthCounts, getTotalStudyTime, getTodayStats, type KanjiProgress } from '$lib/db';
 	import { getGrowthIcon, getGrowthLabel, type GrowthLevel } from '$lib/types';
 
 	let dailyStats: { date: string; count: number }[] = $state([]);
 	let growthCounts: Record<GrowthLevel, number> = $state({ 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 });
 	let totalAttempts = $state(0);
 	let averageAccuracy = $state(0);
+	let totalStudyTime = $state(0);
+	let todayStudyTime = $state(0);
 	let loading = $state(true);
 
 	onMount(async () => {
-		const [stats, counts, progressList] = await Promise.all([
+		const [stats, counts, progressList, studyTime, todayStats] = await Promise.all([
 			getDailyStats(7),
 			getGrowthCounts(),
-			getAllProgress()
+			getAllProgress(),
+			getTotalStudyTime(),
+			getTodayStats()
 		]);
+
+		totalStudyTime = studyTime;
+		todayStudyTime = todayStats.time;
 
 		dailyStats = stats;
 		growthCounts = counts;
@@ -37,6 +44,16 @@
 	function formatDate(dateStr: string): string {
 		const d = new Date(dateStr);
 		return `${d.getMonth() + 1}/${d.getDate()}`;
+	}
+
+	function formatStudyTime(ms: number): string {
+		const totalMinutes = Math.floor(ms / 60000);
+		const hours = Math.floor(totalMinutes / 60);
+		const minutes = totalMinutes % 60;
+		if (hours > 0) {
+			return `${hours}時間${minutes}分`;
+		}
+		return `${minutes}分`;
 	}
 
 	const discoveredCount = $derived(
@@ -80,6 +97,14 @@
 					<div class="rounded-xl bg-pink-50 p-4">
 						<div class="text-3xl font-bold text-pink-600">{growthCounts[4] + growthCounts[5]}</div>
 						<div class="text-sm text-gray-500">マスター数</div>
+					</div>
+					<div class="rounded-xl bg-amber-50 p-4">
+						<div class="text-2xl font-bold text-amber-600">{formatStudyTime(totalStudyTime)}</div>
+						<div class="text-sm text-gray-500">総学習時間</div>
+					</div>
+					<div class="rounded-xl bg-cyan-50 p-4">
+						<div class="text-2xl font-bold text-cyan-600">{formatStudyTime(todayStudyTime)}</div>
+						<div class="text-sm text-gray-500">今日の学習時間</div>
 					</div>
 				</div>
 			</section>
