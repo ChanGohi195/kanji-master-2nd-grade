@@ -336,6 +336,13 @@
 		mistakeCount++;
 	}
 
+	// スキップ機能（記録せずに次の問題へ）
+	function handleSkip() {
+		if (showResult) return;
+		stopActivityTracking();
+		loadNextQuestion();
+	}
+
 	// タイマー表示用
 	function formatTime(seconds: number): string {
 		const m = Math.floor(seconds / 60);
@@ -401,14 +408,22 @@
 		<!-- プレイ中 -->
 		<header class="bg-white shadow-md flex-shrink-0">
 			<div class="flex items-center justify-between px-4 py-2">
-				<!-- タイマー -->
-				<div class="text-3xl font-bold {timerColor} {timerPulse ? 'animate-pulse' : ''}">
-					{formatTime(timeLeft)}
-				</div>
+				<!-- やめるボタン -->
+				<button
+					onclick={endGame}
+					class="text-gray-500 hover:text-gray-700 text-lg"
+				>
+					← やめる
+				</button>
 
-				<h1 class="text-lg font-bold text-gray-700">
-					{questionType === 'yomi' ? 'よみ' : 'かき'}
-				</h1>
+				<div class="flex items-center gap-3">
+					<!-- タイマー -->
+					<div class="text-2xl font-bold {timerColor} {timerPulse ? 'animate-pulse' : ''}">
+						{formatTime(timeLeft)}
+					</div>
+					<span class="text-gray-400">|</span>
+					<span class="text-lg text-gray-600">{questionType === 'yomi' ? 'よみ' : 'かき'}</span>
+				</div>
 
 				<!-- スコア -->
 				<div class="text-xl font-bold text-purple-600">
@@ -533,6 +548,14 @@
 								</div>
 							{/if}
 						</div>
+					{:else}
+						<!-- スキップボタン -->
+						<button
+							onclick={handleSkip}
+							class="mt-4 text-gray-400 hover:text-gray-600 text-sm"
+						>
+							スキップ →
+						</button>
 					{/if}
 				</div>
 			{:else}
