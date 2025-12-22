@@ -11,6 +11,7 @@
 	const INACTIVE_THRESHOLD = 10000;
 	let lastActivity = $state(Date.now());
 	let activeTime = $state(0);
+	let trackingStartTime = $state(Date.now());
 	let activityInterval: ReturnType<typeof setInterval> | null = null;
 
 	function handleActivity() {
@@ -18,7 +19,9 @@
 	}
 
 	function startActivityTracking() {
-		lastActivity = Date.now();
+		const now = Date.now();
+		lastActivity = now;
+		trackingStartTime = now;
 		activeTime = 0;
 		if (activityInterval) clearInterval(activityInterval);
 		activityInterval = setInterval(() => {
@@ -34,7 +37,9 @@
 			clearInterval(activityInterval);
 			activityInterval = null;
 		}
-		return activeTime;
+		// 1秒未満で回答した場合も実際の経過時間を返す
+		const elapsed = Date.now() - trackingStartTime;
+		return Math.max(activeTime, Math.min(elapsed, 1000));
 	}
 
 	onDestroy(() => {
