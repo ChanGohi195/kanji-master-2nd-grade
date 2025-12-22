@@ -492,7 +492,7 @@
 									width={180}
 									height={180}
 									strokeColor="#333"
-									strokeWidth={2}
+									strokeWidth={3}
 								/>
 							{/if}
 						</div>
