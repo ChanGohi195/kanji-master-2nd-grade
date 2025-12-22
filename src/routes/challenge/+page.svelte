@@ -9,6 +9,36 @@
 	import WritingCanvas from '$lib/components/WritingCanvas.svelte';
 	import { recognizeKanji } from '$lib/services/kanjiRecognizer';
 
+	// アクティブ時間追跡（10秒以上操作がなければカウント停止）
+	const INACTIVE_THRESHOLD = 10000;
+	let lastActivity = $state(Date.now());
+	let activeTime = $state(0);
+	let activityInterval: ReturnType<typeof setInterval> | null = null;
+
+	function handleActivity() {
+		lastActivity = Date.now();
+	}
+
+	function startActivityTracking() {
+		lastActivity = Date.now();
+		activeTime = 0;
+		if (activityInterval) clearInterval(activityInterval);
+		activityInterval = setInterval(() => {
+			const now = Date.now();
+			if (now - lastActivity < INACTIVE_THRESHOLD) {
+				activeTime += 1000;
+			}
+		}, 1000);
+	}
+
+	function stopActivityTracking(): number {
+		if (activityInterval) {
+			clearInterval(activityInterval);
+			activityInterval = null;
+		}
+		return activeTime;
+	}
+
 	interface Example {
 		id: string;
 		sentence: string;
@@ -80,6 +110,7 @@
 
 	onDestroy(() => {
 		if (timerInterval) clearInterval(timerInterval);
+		if (activityInterval) clearInterval(activityInterval);
 	});
 
 	function startGame() {
@@ -137,6 +168,8 @@
 				kakiMode = Math.random() < 0.5 ? 'stroke' : 'freehand';
 			}
 		}
+
+		startActivityTracking();
 	}
 
 	function generateChoices() {
@@ -161,6 +194,8 @@
 		isCorrect = answer === currentQuestion.example.reading;
 		showResult = true;
 
+		const timeSpent = stopActivityTracking();
+
 		results.yomi.total++;
 		if (isCorrect) {
 			results.yomi.correct++;
@@ -177,7 +212,7 @@
 			result: isCorrect ? 'correct' : 'incorrect',
 			score: isCorrect ? 1 : 0,
 			hintUsed: false,
-			timeSpent: 0
+			timeSpent
 		});
 		await recordBunshoStudy(
 			currentQuestion.kanji.kanjiId,
@@ -215,6 +250,8 @@
 		isCorrect = result.isCorrect;
 		showResult = true;
 
+		const timeSpent = stopActivityTracking();
+
 		results.kaki.total++;
 		if (isCorrect) {
 			results.kaki.correct++;
@@ -231,7 +268,7 @@
 			result: isCorrect ? 'correct' : 'incorrect',
 			score: isCorrect ? result.confidence : 0,
 			hintUsed: false,
-			timeSpent: 0
+			timeSpent
 		});
 		await recordBunshoStudy(
 			currentQuestion.kanji.kanjiId,
@@ -253,6 +290,8 @@
 
 		isCorrect = mistakeCount <= 2;
 		showResult = true;
+
+		const timeSpent = stopActivityTracking();
 
 		results.kaki.total++;
 		if (isCorrect) {
@@ -276,7 +315,7 @@
 			result,
 			score,
 			hintUsed: false,
-			timeSpent: 0
+			timeSpent
 		});
 		await recordBunshoStudy(
 			currentQuestion.kanji.kanjiId,
@@ -317,7 +356,13 @@
 	<title>チャレンジ - {UI.appName}</title>
 </svelte:head>
 
-<div class="h-screen flex flex-col bg-gradient-to-br from-purple-50 to-pink-100">
+<div
+	class="h-screen flex flex-col bg-gradient-to-br from-purple-50 to-pink-100"
+	onmousemove={handleActivity}
+	onclick={handleActivity}
+	ontouchstart={handleActivity}
+	onkeydown={handleActivity}
+>
 	{#if gameState === 'ready'}
 		<!-- スタート画面 -->
 		<div class="flex-1 flex flex-col items-center justify-center p-6">
