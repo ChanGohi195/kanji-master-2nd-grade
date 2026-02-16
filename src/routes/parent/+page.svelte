@@ -115,7 +115,7 @@
 				<div class="space-y-3">
 					{#each [5, 4, 3, 2, 1, 0] as level}
 						{@const count = growthCounts[level as GrowthLevel]}
-						{@const percent = 80 > 0 ? (count / 80) * 100 : 0}
+						{@const percent = 160 > 0 ? (count / 160) * 100 : 0}
 						<div class="flex items-center gap-3">
 							<span class="text-2xl">{getGrowthIcon(level as GrowthLevel)}</span>
 							<span class="w-24 text-sm text-gray-600">{getGrowthLabel(level as GrowthLevel)}</span>

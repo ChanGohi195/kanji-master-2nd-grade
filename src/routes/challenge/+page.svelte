@@ -8,6 +8,8 @@
 	import SpeakButton from '$lib/components/SpeakButton.svelte';
 	import WritingCanvas from '$lib/components/WritingCanvas.svelte';
 	import { recognizeKanji } from '$lib/services/kanjiRecognizer';
+	import { fetchCharacterData, isStrokeDataSupported } from '$lib/services/hanziData';
+	import type { HanziWriterCharData } from '$lib/services/hanziData';
 
 	// アクティブ時間追跡（10秒以上操作がなければカウント停止）
 	const INACTIVE_THRESHOLD = 10000;
@@ -55,6 +57,7 @@
 	interface KanjiExample {
 		kanjiId: string;
 		character: string;
+		strokeCount: number;
 		examples: Example[];
 	}
 
@@ -86,6 +89,7 @@
 	let kakiMode: KakiMode = $state('stroke');
 	let canvasRef: WritingCanvas | undefined = $state(undefined);
 	let isRecognizing = $state(false);
+	let currentCharData: HanziWriterCharData | null = $state(null);
 
 	// 共通
 	let showResult = $state(false);
@@ -161,13 +165,21 @@
 		mistakeCount = 0;
 		quizStarted = false;
 		isRecognizing = false;
+		currentCharData = null;
 		canvasRef?.clear();
+
+		// ストロークデータを先行取得（手書き認識のレイテンシ回避）
+		if (isStrokeDataSupported(currentQuestion.kanji.character)) {
+			fetchCharacterData(currentQuestion.kanji.character).then(data => {
+				currentCharData = data;
+			});
+		}
 
 		if (questionType === 'yomi') {
 			generateChoices();
 		} else {
 			// 書き問題: 非サポート漢字は手書き認識のみ、それ以外はランダム
-			if (unsupportedKanji.has(currentQuestion.kanji.character)) {
+			if (!isStrokeDataSupported(currentQuestion.kanji.character)) {
 				kakiMode = 'freehand';
 			} else {
 				kakiMode = Math.random() < 0.5 ? 'stroke' : 'freehand';
@@ -181,12 +193,45 @@
 		if (!currentQuestion) return;
 
 		const correct = currentQuestion.example.reading;
-		const allReadings = allExamples
-			.flatMap(k => k.examples.map(e => e.reading))
-			.filter(r => r !== correct);
+		const correctStem = getStemReading(correct);
 
-		const shuffled = [...new Set(allReadings)].sort(() => Math.random() - 0.5);
-		const wrongChoices = shuffled.slice(0, 3);
+		// 表示上の重複を避けるため、stemで管理
+		const usedStems = new Set<string>([correctStem]);
+		let wrongChoices: string[] = [];
+
+		// まず同じ漢字の他の読みから選択肢を取る
+		const sameKanjiReadings = currentQuestion.kanji.examples
+			.map(e => e.reading)
+			.filter(r => {
+				const stem = getStemReading(r);
+				return !usedStems.has(stem);
+			});
+
+		const shuffledSame = sameKanjiReadings.sort(() => Math.random() - 0.5);
+		for (const r of shuffledSame) {
+			if (wrongChoices.length >= 3) break;
+			const stem = getStemReading(r);
+			if (!usedStems.has(stem)) {
+				usedStems.add(stem);
+				wrongChoices.push(r);
+			}
+		}
+
+		// 3つに満たない場合、他の漢字の読みから補完
+		if (wrongChoices.length < 3) {
+			const allReadings = allExamples
+				.flatMap(k => k.examples.map(e => e.reading))
+				.sort(() => Math.random() - 0.5);
+
+			for (const r of allReadings) {
+				if (wrongChoices.length >= 3) break;
+				const stem = getStemReading(r);
+				if (!usedStems.has(stem)) {
+					usedStems.add(stem);
+					wrongChoices.push(r);
+				}
+			}
+		}
 
 		choices = [correct, ...wrongChoices].sort(() => Math.random() - 0.5);
 	}
@@ -229,9 +274,6 @@
 		setTimeout(loadNextQuestion, isCorrect ? 500 : 1000);
 	}
 
-	// HanziWriterでサポートされていない漢字（日本の新字体）
-	const unsupportedKanji = new Set(['図', '売', '姉', '帰', '広', '戸', '楽', '歩', '毎', '絵', '読', '顔', '黒']);
-
 	// 書き問題の筆順クイズ自動開始（kakiMode === 'stroke'の場合のみ）
 	$effect(() => {
 		if (gameState === 'playing' && questionType === 'kaki' && kakiMode === 'stroke' && KanjiWriterComponent && writerRef && !quizStarted && !showResult) {
@@ -249,7 +291,12 @@
 		isRecognizing = true;
 
 		const imageData = canvasRef.getImageForRecognition(64);
-		const result = recognizeKanji(imageData, currentQuestion.kanji.character);
+		const result = recognizeKanji(imageData, currentQuestion.kanji.character, {
+			userStrokeCount: canvasRef.getStrokeCount(),
+			expectedStrokeCount: currentQuestion.kanji.strokeCount,
+			userStrokes: canvasRef.getStrokes(),
+			referenceMedians: currentCharData?.medians
+		});
 
 		isRecognizing = false;
 		isCorrect = result.isCorrect;
@@ -499,7 +546,7 @@
 									<KanjiWriterComponent
 										bind:this={writerRef}
 										character={currentQuestion.kanji.character}
-										size={180}
+										size={240}
 										showOutline={true}
 										onComplete={handleQuizComplete}
 										onMistake={handleQuizMistake}
@@ -509,8 +556,8 @@
 								<!-- 手書き認識 -->
 								<WritingCanvas
 									bind:this={canvasRef}
-									width={180}
-									height={180}
+									width={240}
+									height={240}
 									strokeColor="#333"
 									strokeWidth={3}
 								/>

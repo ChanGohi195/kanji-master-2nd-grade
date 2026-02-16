@@ -9,6 +9,8 @@
 	import SpeakButton from '$lib/components/SpeakButton.svelte';
 	import WritingCanvas from '$lib/components/WritingCanvas.svelte';
 	import { recognizeKanji } from '$lib/services/kanjiRecognizer';
+	import { fetchCharacterData, isStrokeDataSupported } from '$lib/services/hanziData';
+	import type { HanziWriterCharData } from '$lib/services/hanziData';
 
 	// アクティブ時間追跡（10秒以上操作がなければカウント停止）
 	const INACTIVE_THRESHOLD = 10000;
@@ -60,6 +62,7 @@
 	interface KanjiExample {
 		kanjiId: string;
 		character: string;
+		strokeCount: number;
 		examples: Example[];
 	}
 
@@ -84,6 +87,7 @@
 	let showAnswer = $state(false);
 	let isRecognizing = $state(false);
 	let recognitionConfidence = $state(0);
+	let currentCharData: HanziWriterCharData | null = $state(null);
 
 	let questionList: { kanji: KanjiExample; example: Example }[] = $state([]);
 	let targetKanjiChar: string | null = $state(null);
@@ -145,8 +149,16 @@
 		hintUsed = false;
 		helpLevel = 0;
 		showAnswer = false;
+		currentCharData = null;
 		// キャンバスをクリア
 		canvasRef?.clear();
+
+		// ストロークデータを先行取得
+		if (isStrokeDataSupported(currentExample.kanji.character)) {
+			fetchCharacterData(currentExample.kanji.character).then(data => {
+				currentCharData = data;
+			});
+		}
 	}
 
 	function generateChoices() {
@@ -298,7 +310,12 @@
 
 		// 認識実行
 		const imageData = canvasRef.getImageForRecognition(64);
-		const result = recognizeKanji(imageData, currentExample.kanji.character);
+		const result = recognizeKanji(imageData, currentExample.kanji.character, {
+			userStrokeCount: canvasRef.getStrokeCount(),
+			expectedStrokeCount: currentExample.kanji.strokeCount,
+			userStrokes: canvasRef.getStrokes(),
+			referenceMedians: currentCharData?.medians
+		});
 
 		isRecognizing = false;
 		showAnswer = true;
@@ -431,8 +448,8 @@ function handleDifficult() { if (helpLevel === 0) { helpLevel = 1; hintUsed = tr
 							<!-- 自由描画モード -->
 							<WritingCanvas
 								bind:this={canvasRef}
-								width={180}
-								height={180}
+								width={240}
+								height={240}
 								strokeColor="#333"
 								strokeWidth={4}
 							/>
@@ -441,7 +458,7 @@ function handleDifficult() { if (helpLevel === 0) { helpLevel = 1; hintUsed = tr
 							<KanjiWriterComponent
 								bind:this={writerRef}
 								character={currentExample.kanji.character}
-								size={180}
+								size={240}
 								showOutline={true}
 								onComplete={handleQuizComplete}
 								onMistake={handleQuizMistake}
